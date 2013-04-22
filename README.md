@@ -21,10 +21,10 @@ going on on the page.
 Use Accessible Tabs
 -------------------
 
- 1.) Configure the default Settings in the Accessible Tabs Module (System/Accessible Tabs). You can Load predefined configuration sets. Alternate is it possible to configure each class manual. Please note. If you not use JQUERY then you can not access all settings.
- 2.) Generate a new Content Element from the type 'Umschlag (Beginn)'.
- 3.) Generate for each Tab a new Content Element from the type 'neues Tab'.
- 4.) Last but not least generate a new Content Element from the type 'Umschlag (End)'.
+ * Configure the default Settings in the Accessible Tabs Module (System/Accessible Tabs). You can Load predefined configuration sets. Alternate is it possible to configure each class manual. Please note. If you not use JQUERY then you can not access all settings.
+ * Generate a new Content Element from the type 'Umschlag (Beginn)'.
+ * Generate for each Tab a new Content Element from the type 'neues Tab'.
+ * Last but not least generate a new Content Element from the type 'Umschlag (End)'.
 
 
 System Compatibility
