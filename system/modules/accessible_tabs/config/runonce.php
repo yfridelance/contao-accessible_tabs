@@ -116,7 +116,7 @@ class AccessibleTabsRunonce extends Controller
             'accessible_tabs_tabs_list_class'           => $c['fry_tabsListClass']         ? $c['fry_tabsListClass']          : $d['accessible_tabs_tabs_list_class'],
             'accessible_tabs_first_nav_item_class'      => $c['fry_firstNavItemClass']     ? $c['fry_firstNavItemClass']      : $d['accessible_tabs_first_nav_item_class'],
             'accessible_tabs_last_nav_item_class'       => $c['fry_lastNavItemClass']      ? $c['fry_lastNavItemClass']       : $d['accessible_tabs_last_nav_item_class'],
-            'accessible_tabs_clearfix_class'            => $c['fry_clearFix']              ? $c['fry_clearFix']               : $d['accessible_tabs_clearfix'],
+            'accessible_tabs_clearfix_class'            => 'clearfix',
             'accessible_tabs_css_class_available'       => $c['fry_cssClassAvailable']     ? $c['fry_cssClassAvailable']      : $d['accessible_tabs_css_class_available'],
             'accessible_tabs_wrap_inner_nav_links'      => $c['fry_wrapInnerNavLinks']     ? $c['fry_wrapInnerNavLinks']      : $d['accessible_tabs_wrap_inner_nav_links'],
             'accessible_tabs_sync_height_method_name'   => $c['fry_syncHeightsMethodName'] ? $c['fry_syncHeightsMethodName']  : $d['accessible_tabs_sync_height_method_name'],
@@ -152,8 +152,8 @@ class AccessibleTabsRunonce extends Controller
 
         if ($this->DB->fieldExists('accessible_tabs_type', 'tl_content'))
         {
-            $query = 'SELECT * FROM tl_content WHERE fry_tabsType <> ?';
-            $rs = $this->DB->prepare($query)->execute('');
+            $query = 'SELECT * FROM tl_content WHERE type=?';
+            $rs = $this->DB->prepare($query)->execute('fry_accessible_tabs');
             if($rs)
             {
                 while($rs->next())
@@ -176,7 +176,7 @@ class AccessibleTabsRunonce extends Controller
                         'accessible_tabs_tabs_list_class'           => $rs->fry_tabsListClass, //
                         'accessible_tabs_first_nav_item_class'      => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_first_nav_item_class'] : null,
                         'accessible_tabs_last_nav_item_class'       => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_last_nav_item_class'] : null,
-                        'accessible_tabs_clearfix_class'            => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_clearfix'] : null,
+                        'accessible_tabs_clearfix_class'            => $rs->fry_tabsType == 'Start' ? 'clearfix' : null,
                         'accessible_tabs_title'                     => $rs->fry_tabTitle, //
                         'accessible_tabs_anchor'                    => $rs->fry_tabAnchor, //
                         'accessible_tabs_css_class_available'       => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_css_class_available'] : null,
