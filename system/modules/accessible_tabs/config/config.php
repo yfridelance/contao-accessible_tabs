@@ -46,7 +46,7 @@ if (file_exists(TL_ROOT . '/system/config/accessible_tabs.php')) {
 $GLOBALS['BE_MOD']['system']['accessible_tabs'] = array
 (
     'tables' => array('tl_accessible_tabs'),
-    'icon'   => 'system/modules/accessible_tabs/assets/images/icon.jpg',
+    'icon'   => 'system/modules/accessible_tabs/assets/images/icon.png',
 );
 
 /**
