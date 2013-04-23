@@ -68,7 +68,7 @@ class AccessibleTabsRunonce extends Controller
 
                 $this->prepareConfig($name,$c,$d);
 
-                DCA_TL_Accessible_Tabs::getInstance()->loadSettings($name);
+                DCA_TL_Accessible_Tabs::getInstance()->loadSettings($name,false);
 
                 // migrate Database
                 $this->migrateDatabase();
@@ -153,7 +153,7 @@ class AccessibleTabsRunonce extends Controller
         if ($this->DB->fieldExists('accessible_tabs_type', 'tl_content'))
         {
             $query = 'SELECT * FROM tl_content WHERE type=?';
-            $rs = $this->DB->prepare($query)->execute('fry_accessible_tabs');
+            $rs = $this->DB->prepare($query)->execute('fry_accessible_tab');
             if($rs)
             {
                 while($rs->next())
