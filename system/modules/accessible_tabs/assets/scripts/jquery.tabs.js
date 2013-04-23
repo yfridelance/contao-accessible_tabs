@@ -79,7 +79,7 @@
 
                 $(el).find(o.options.tabhead).each(function(i){
                     var id = '';
-                    elId = $(this).attr('id');
+                    var elId = $(this).attr('id');
                     if(elId){
                         // Skip this item if it already exists.
                         if(elId.indexOf('accessibletabscontent') === 0) {
@@ -163,14 +163,14 @@
                         // });
                     });
 
-                    $(this).focus(function(event){
+                    $(this).focus(function(){
                         $(document).keyup(function(event){
                             if(keyCodes[event.keyCode]){
                                 o.showAccessibleTab(i+keyCodes[event.keyCode]);
                             }
                         });
                     });
-                    $(this).blur(function(event){
+                    $(this).blur(function(){
                         $(document).unbind( "keyup" );
                     });
 
@@ -243,10 +243,9 @@
         },
         showAccessibleTabSelector: function(selector){
             debug('showAccessibleTabSelector');
-            var o = this;
             var el = $(selector);
             if(el){
-                if(el.get(0).nodeName.toLowerCase() == 'a'){
+                if(el.get(0).nodeName.toLowerCase() === 'a'){
                     el.click();
                 }else{
                     debug('the selector of a showAccessibleTabSelector() call needs to point to a tabs headline!');
