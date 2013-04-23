@@ -76,25 +76,10 @@ class AccessibleTabsRunonce extends Controller
 
         }
 
-//
-//
-//        // Remove settings from localconf
-//        $options = array('fry_headerTag','fry_tabPosition','fry_syncHeights','fry_saveState','fry_autoAnchor',
-//            'fry_pagination','fry_fx','fry_fxSpeed','fry_wrapperClass','fry_currentClass','fry_tabheadClass',
-//            'fry_tabbodyClass','fry_tabsListClass','fry_firstNavItemClass','fry_lastNavItemClass','fry_clearFix',
-//            'fry_cssClassAvailable','fry_wrapInnerNavLinks','fry_syncHeightsMethodName'
-//        );
-//        //$this->Config->delete('fry_headerTag');
-//        foreach($options as $opt)
-//        {
-//            if($this->Config->get($opt))
-//            {
-//                $this->Config->delete($opt);
-//            }
-//        }
-//
-//
-//
+        // Delete the fry_accessible_tabs folder from filesystem
+        $folder = new Folder('/system/modules/fry_accessible_tabs');
+        $folder->delete();
+
     }
 
     protected function prepareConfig($name,$c,$d)
