@@ -150,44 +150,42 @@ class AccessibleTabsRunonce extends Controller
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_wrap_inner_nav_links` char(1) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_sync_height_method_name` varchar(32) NOT NULL default '';");
 
-        if ($this->DB->fieldExists('accessible_tabs_type', 'tl_content'))
-        {
-            $query = 'SELECT * FROM tl_content WHERE type=?';
-            $rs = $this->DB->prepare($query)->execute('fry_accessible_tab');
-            if($rs)
-            {
-                while($rs->next())
-                {
-                    $query = "UPDATE tl_content SET %s WHERE id=?;";
-                    $set = array(
-                        'accessible_tabs_type'                      => $rs->fry_tabsType, //
-                        'accessible_tabs_tabhead'                   => $rs->fry_headerTag, //
-                        'accessible_tabs_position'                  => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_position'] : null,
-                        'accessible_tabs_sync_heights'              => $rs->fry_syncHeights, //
-                        'accessible_tabs_save_state'                => $rs->fry_saveState,  //
-                        'accessible_tabs_auto_anchor'               => $rs->fry_autoAnchor, //
-                        'accessible_tabs_pagination'                => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_pagination'] : null,
-                        'accessible_tabs_fx'                        => $rs->fry_fx, //
-                        'accessible_tabs_fxspeed'                   => $rs->fry_fxSpeed, //
-                        'accessible_tabs_wrapper_class'             => $rs->fry_wrapperClass, //
-                        'accessible_tabs_current_class'             => $rs->fry_currentClass, //
-                        'accessible_tabs_tabhead_class'             => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_tabhead_class'] : null,
-                        'accessible_tabs_tabbody'                   => $rs->fry_tabbodyClass, //
-                        'accessible_tabs_tabs_list_class'           => $rs->fry_tabsListClass, //
-                        'accessible_tabs_first_nav_item_class'      => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_first_nav_item_class'] : null,
-                        'accessible_tabs_last_nav_item_class'       => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_last_nav_item_class'] : null,
-                        'accessible_tabs_clearfix_class'            => $rs->fry_tabsType == 'Start' ? 'clearfix' : null,
-                        'accessible_tabs_title'                     => $rs->fry_tabTitle, //
-                        'accessible_tabs_anchor'                    => $rs->fry_tabAnchor, //
-                        'accessible_tabs_css_class_available'       => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_css_class_available'] : null,
-                        'accessible_tabs_wrap_inner_nav_links'      => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_wrap_inner_nav_links'] : null,
-                        'accessible_tabs_sync_height_method_name'   => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_sync_height_method_name'] : null,
-                    );
 
-                    $this->DB->prepare($query)->set($set)->execute($rs->id);
-                }
-            }
+        $query = 'SELECT * FROM tl_content WHERE type=?';
+        $rs = $this->DB->prepare($query)->execute('fry_accessible_tab');
+
+        while($rs->next())
+        {
+            $query = "UPDATE tl_content %s WHERE id=?;";
+            $set = array(
+                'type'                                      => 'accessible_tab',
+                'accessible_tabs_type'                      => $rs->fry_tabsType, //
+                'accessible_tabs_tabhead'                   => $rs->fry_headerTag, //
+                'accessible_tabs_position'                  => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_position'] : null,
+                'accessible_tabs_sync_heights'              => $rs->fry_syncHeights, //
+                'accessible_tabs_save_state'                => $rs->fry_saveState,  //
+                'accessible_tabs_auto_anchor'               => $rs->fry_autoAnchor, //
+                'accessible_tabs_pagination'                => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_pagination'] : null,
+                'accessible_tabs_fx'                        => $rs->fry_fx, //
+                'accessible_tabs_fxspeed'                   => $rs->fry_fxSpeed, //
+                'accessible_tabs_wrapper_class'             => $rs->fry_wrapperClass, //
+                'accessible_tabs_current_class'             => $rs->fry_currentClass, //
+                'accessible_tabs_tabhead_class'             => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_tabhead_class'] : null,
+                'accessible_tabs_tabbody'                   => $rs->fry_tabbodyClass, //
+                'accessible_tabs_tabs_list_class'           => $rs->fry_tabsListClass, //
+                'accessible_tabs_first_nav_item_class'      => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_first_nav_item_class'] : null,
+                'accessible_tabs_last_nav_item_class'       => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_last_nav_item_class'] : null,
+                'accessible_tabs_clearfix_class'            => $rs->fry_tabsType == 'Start' ? 'clearfix' : null,
+                'accessible_tabs_title'                     => $rs->fry_tabTitle, //
+                'accessible_tabs_anchor'                    => $rs->fry_tabAnchor, //
+                'accessible_tabs_css_class_available'       => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_css_class_available'] : null,
+                'accessible_tabs_wrap_inner_nav_links'      => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_wrap_inner_nav_links'] : null,
+                'accessible_tabs_sync_height_method_name'   => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_sync_height_method_name'] : null,
+            );
+
+            $this->DB->prepare($query)->set($set)->execute($rs->id);
         }
+
     }
 
 }
