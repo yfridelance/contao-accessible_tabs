@@ -128,27 +128,27 @@ class AccessibleTabsRunonce extends Controller
 
         //Add Fields
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_type` varchar(32) NOT NULL default '';");
-        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_tabhead` varchar(2) NOT NULL default '';");
+        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_tabhead` varchar(2) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_position` varchar(32) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_sync_heights` char(1) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_save_state` char(1) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_auto_anchor` char(1) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_pagination` char(1) NULL default '';");
-        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_fx` varchar(32) NOT NULL default '';");
-        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_fxspeed` varchar(32) NOT NULL default '';");
-        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_wrapper_class` varchar(32) NOT NULL default '';");
-        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_current_class` varchar(32) NOT NULL default '';");
+        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_fx` varchar(32) NULL default '';");
+        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_fxspeed` varchar(32) NULL default '';");
+        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_wrapper_class` varchar(32) NULL default '';");
+        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_current_class` varchar(32) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_tabhead_class` varchar(32) NULL default '';");
-        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_tabbody` varchar(32) NOT NULL default '';");
+        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_tabbody` varchar(32) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_tabs_list_class` varchar(32) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_first_nav_item_class` varchar(32) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_last_nav_item_class` varchar(32) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_clearfix_class` varchar(32) NULL default '';");
-        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_title` varchar(255) NOT NULL default '';");
+        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_title` varchar(255) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_anchor` varchar(255) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_css_class_available` char(1) NULL default '';");
         $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_wrap_inner_nav_links` char(1) NULL default '';");
-        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_sync_height_method_name` varchar(32) NOT NULL default '';");
+        $this->DB->execute("ALTER TABLE `tl_content` ADD `accessible_tabs_sync_height_method_name` varchar(32) NULL default '';");
 
 
         $query = 'SELECT * FROM tl_content WHERE type=?';
@@ -160,24 +160,24 @@ class AccessibleTabsRunonce extends Controller
             $set = array(
                 'type'                                      => 'accessible_tabs',
                 'accessible_tabs_type'                      => $rs->fry_tabsType, //
-                'accessible_tabs_tabhead'                   => $rs->fry_headerTag, //
+                'accessible_tabs_tabhead'                   => $rs->fry_tabsType == 'Start' ? $rs->fry_headerTag: null, //
                 'accessible_tabs_position'                  => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_position'] : null,
-                'accessible_tabs_sync_heights'              => $rs->fry_syncHeights, //
-                'accessible_tabs_save_state'                => $rs->fry_saveState,  //
-                'accessible_tabs_auto_anchor'               => $rs->fry_autoAnchor, //
+                'accessible_tabs_sync_heights'              => $rs->fry_tabsType == 'Start' ? $rs->fry_syncHeights: null, //
+                'accessible_tabs_save_state'                => $rs->fry_tabsType == 'Start' ? $rs->fry_saveState: null,  //
+                'accessible_tabs_auto_anchor'               => $rs->fry_tabsType == 'Start' ? $rs->fry_autoAnchor: null, //
                 'accessible_tabs_pagination'                => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_pagination'] : null,
-                'accessible_tabs_fx'                        => $rs->fry_fx, //
-                'accessible_tabs_fxspeed'                   => $rs->fry_fxSpeed, //
-                'accessible_tabs_wrapper_class'             => $rs->fry_wrapperClass, //
-                'accessible_tabs_current_class'             => $rs->fry_currentClass, //
+                'accessible_tabs_fx'                        => $rs->fry_tabsType == 'Start' ? $rs->fry_fx: null, //
+                'accessible_tabs_fxspeed'                   => $rs->fry_tabsType == 'Start' ? $rs->fry_fxSpeed: null, //
+                'accessible_tabs_wrapper_class'             => $rs->fry_tabsType == 'Start' ? $rs->fry_wrapperClass: null, //
+                'accessible_tabs_current_class'             => $rs->fry_tabsType == 'Start' ? $rs->fry_currentClass: null, //
                 'accessible_tabs_tabhead_class'             => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_tabhead_class'] : null,
-                'accessible_tabs_tabbody'                   => '.' . $rs->fry_tabbodyClass, //
-                'accessible_tabs_tabs_list_class'           => $rs->fry_tabsListClass, //
+                'accessible_tabs_tabbody'                   => $rs->fry_tabsType == 'Start' ? '.' . $rs->fry_tabbodyClass: null, //
+                'accessible_tabs_tabs_list_class'           => $rs->fry_tabsType == 'Start' ? $rs->fry_tabsListClass: null, //
                 'accessible_tabs_first_nav_item_class'      => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_first_nav_item_class'] : null,
                 'accessible_tabs_last_nav_item_class'       => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_last_nav_item_class'] : null,
                 'accessible_tabs_clearfix_class'            => $rs->fry_tabsType == 'Start' ? 'clearfix' : null,
-                'accessible_tabs_title'                     => $rs->fry_tabTitle, //
-                'accessible_tabs_anchor'                    => $rs->fry_tabAnchor, //
+                'accessible_tabs_title'                     => $rs->fry_tabsType == 'Add' ? $rs->fry_tabTitle: null, //
+                'accessible_tabs_anchor'                    => $rs->fry_tabsType == 'Add' ? $rs->fry_tabAnchor: null, //
                 'accessible_tabs_css_class_available'       => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_css_class_available'] : null,
                 'accessible_tabs_wrap_inner_nav_links'      => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_wrap_inner_nav_links'] : null,
                 'accessible_tabs_sync_height_method_name'   => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_sync_height_method_name'] : null,
