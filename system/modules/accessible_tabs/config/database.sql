@@ -10,7 +10,7 @@ CREATE TABLE `tl_content` (
 	`accessible_tabs_fxspeed` varchar(32) NOT NULL default '',
 	`accessible_tabs_wrapper_class` varchar(32) NOT NULL default '',
 	`accessible_tabs_current_class` varchar(32) NOT NULL default '',
-	`accessible_tabs_tabhead_class` varchar(32) NOT NULL default '',
+	`accessible_tabs_tabhead_class` varchar(32) NULL default '',
 	`accessible_tabs_tabbody` varchar(32) NOT NULL default '',
 	`accessible_tabs_tabs_list_class` varchar(32) NULL default '',
 	`accessible_tabs_first_nav_item_class` varchar(32) NULL default '',
