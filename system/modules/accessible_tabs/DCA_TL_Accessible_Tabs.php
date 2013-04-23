@@ -96,7 +96,7 @@ class DCA_TL_Accessible_Tabs extends Backend
     /**
      * Load settings
      */
-    public function loadSettings($strPresets)
+    public function loadSettings($strPresets,$reload = true)
     {
         if (isset($GLOBALS['TL_ACCESSIBLE_TABS_DEFAULTS'][$strPresets]))
         {
@@ -111,7 +111,7 @@ class DCA_TL_Accessible_Tabs extends Backend
                 }
             }
             $_SESSION['TL_INFO'][] = sprintf($GLOBALS['TL_LANG']['tl_accessible_tabs']['loadSettings'], $strPresets);
-            $this->reload();
+            if($reload) $this->reload();
         }
     }
 
