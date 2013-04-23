@@ -84,7 +84,7 @@ class DCA_TL_Accessible_Tabs extends Backend
     {
         if(version_compare(VERSION,'3','<'))
         {
-            if(!in_array('jquery', $this->Config->getActiveModules()))
+            if(!in_array('usejquery', $this->Config->getActiveModules()))
             {
                 return false;
             }
