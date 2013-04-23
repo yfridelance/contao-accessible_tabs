@@ -35,10 +35,10 @@ System Compatibility
  * Mootools / JQuery
 
 
-Upgrade from a older Version
+Update from a older Version
 ----------------------------
 
-!!! Is not supported for this time !!!
+Its important to run the install tool after manual updates! the fry_accessible_tabs folder will be removed automatically...
 
 
 Thanks
