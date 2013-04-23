@@ -152,8 +152,8 @@ class AccessibleTabsRunonce extends Controller
 
         if ($this->DB->fieldExists('accessible_tabs_type', 'tl_content'))
         {
-            $query = 'SELECT * FROM tl_content WHERE fry_tabsType <> NULL';
-            $rs = $this->DB->prepare($query)->execute();
+            $query = 'SELECT * FROM tl_content WHERE fry_tabsType <> ?';
+            $rs = $this->DB->prepare($query)->execute('');
             if($rs)
             {
                 while($rs->next())
