@@ -171,7 +171,7 @@ class AccessibleTabsRunonce extends Controller
                 'accessible_tabs_wrapper_class'             => $rs->fry_wrapperClass, //
                 'accessible_tabs_current_class'             => $rs->fry_currentClass, //
                 'accessible_tabs_tabhead_class'             => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_tabhead_class'] : null,
-                'accessible_tabs_tabbody'                   => $rs->fry_tabbodyClass, //
+                'accessible_tabs_tabbody'                   => '.' . $rs->fry_tabbodyClass, //
                 'accessible_tabs_tabs_list_class'           => $rs->fry_tabsListClass, //
                 'accessible_tabs_first_nav_item_class'      => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_first_nav_item_class'] : null,
                 'accessible_tabs_last_nav_item_class'       => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_last_nav_item_class'] : null,
