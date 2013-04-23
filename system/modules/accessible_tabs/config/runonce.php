@@ -158,7 +158,7 @@ class AccessibleTabsRunonce extends Controller
         {
             $query = "UPDATE tl_content %s WHERE id=?;";
             $set = array(
-                'type'                                      => 'accessible_tab',
+                'type'                                      => 'accessible_tabs',
                 'accessible_tabs_type'                      => $rs->fry_tabsType, //
                 'accessible_tabs_tabhead'                   => $rs->fry_headerTag, //
                 'accessible_tabs_position'                  => $rs->fry_tabsType == 'Start' ? $GLOBALS['TL_CONFIG']['accessible_tabs_position'] : null,
