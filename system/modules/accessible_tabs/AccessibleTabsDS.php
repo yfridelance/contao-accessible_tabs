@@ -74,11 +74,6 @@ class AccessibleTabsDS
     protected $strTabhead;
 
 
-    protected function __construct()
-    {
-        // TODO: Constructor
-    }
-
 
     public static function getInstance()
     {
