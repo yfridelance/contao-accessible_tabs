@@ -34,7 +34,7 @@
 
 
 /**
- * Include htaccess config file.
+ * Include accessible tabs config file.
  */
 if (file_exists(TL_ROOT . '/system/config/accessible_tabs.php')) {
     include(TL_ROOT . '/system/config/accessible_tabs.php');
