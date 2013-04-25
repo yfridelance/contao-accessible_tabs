@@ -118,7 +118,7 @@ class AccessibleTabsContent extends ContentElement
             }
             else
             {
-                $this->Template           = new \BackendTemplate('be_wildcard');
+                $this->Template           = new BackendTemplate('be_wildcard');
                 $this->Template->wildcard = strtoupper('### Accessible Tabs - Tab Name:'.$this->accessible_tabs_title.' ###');
             }
         }
