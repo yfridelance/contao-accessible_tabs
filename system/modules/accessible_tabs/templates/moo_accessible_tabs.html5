@@ -1,9 +1,0 @@
-<script>
-    $(window).addEvent('domready', function() {
-        <?php foreach(AccessibleTabsDS::getInstance()->getJsTemplate(false) as $item): ?>
-        new AccessibleTabs('#<?php echo $item['id']; ?>', {
-            <?php echo $item['data']; ?>
-        });
-        <?php endforeach; ?>
-    });
-</script>
