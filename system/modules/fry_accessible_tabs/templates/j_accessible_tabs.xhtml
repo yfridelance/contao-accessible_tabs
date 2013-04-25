@@ -1,0 +1,13 @@
+<script type="text/javascript">
+    /* <![CDATA[ */
+    (function($) {
+        $(document).ready(function(){
+            <?php foreach(AccessibleTabsDS::getInstance()->getJsTemplate() as $item): ?>
+            $("#<?php echo $item['id']; ?>").accessibleTabs({
+                <?php echo $item['data']; ?>
+            });
+            <?php endforeach; ?>
+        });
+    })(jQuery);
+    /* ]]> */
+</script>

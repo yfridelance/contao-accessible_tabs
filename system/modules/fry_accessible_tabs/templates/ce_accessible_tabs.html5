@@ -1,0 +1,4 @@
+<?php  if(!$this->first) : ?></section><?php endif; ?>
+
+<<?php echo $this->tabhead; ?><?php if($this->anchor): ?> id="<?php echo $this->anchor; ?>"<?php endif; ?>><?php echo $this->title; ?></<?php echo $this->tabhead; ?>>
+<section class="<?php echo $this->tabbody; ?>">
