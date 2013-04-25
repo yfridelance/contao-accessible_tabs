@@ -39,7 +39,7 @@ $GLOBALS['TL_LANG']['MOD']['accessible_tabs'] = array('Accessible Tabs', 'Zugän
 /**
  * general
  */
-$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_tabhead'][0]                   = 'Header Tag';
+$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_tabhead'][0]                   = 'Tab Head Klasse';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_tabhead'][1]                   = 'Wählen sie das korespondierende Header Tag aus.';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_position'][0]                  = 'Positionierung';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_position'][1]                  = 'Legen sie die Position des Listen-Elementes im Markup fest.';
