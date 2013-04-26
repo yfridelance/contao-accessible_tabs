@@ -48,7 +48,7 @@
                 wrapInnerNavLinks: '', // inner wrap for a-tags in tab navigation. See http://api.jquery.com/wrapInner/ for further informations
                 firstNavItemClass: 'first', // Classname of the first list item in the tab navigation
                 lastNavItemClass: 'last', // Classname of the last list item in the tab navigation
-                clearfixClass: 'clearfix' // Name of the Class that is used to clear/contain floats
+                clearfixClass: 'block' // Name of the Class that is used to clear/contain floats
             };
             var keyCodes = {
                 37 : -1, //LEFT

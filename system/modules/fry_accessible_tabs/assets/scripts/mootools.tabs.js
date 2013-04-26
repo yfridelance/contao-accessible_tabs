@@ -96,7 +96,7 @@ var AccessibleTabs = new Class({
        syncheights:false, // syncs the heights of the tab contents when the SyncHeight plugin is available http://blog.ginader.de/dev/jquery/syncheight/index.php
        syncHeightsClassName:'SyncHeight', // set the Method name of the plugin you want to use to sync the tab contents. Defaults to the SyncHeight plugin: http://github.com/ginader/syncHeight
        debug: true, //generate Debug Output to firebug console
-       clearfixClass:'clearfix',
+       clearfixClass:'block',
        onHideContent: $empty, //add your own hdie animations do other clean-up stuff, heck you could even make a ajax call
        onShowContent: $empty //add your own show animations do other clean-up stuff, heck you could even make a ajax call
 	},
