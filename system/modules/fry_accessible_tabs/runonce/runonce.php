@@ -88,7 +88,7 @@ class AccessibleTabsRunonce extends Controller
 
             'accessible_tabs_tabhead'                   => $c['fry_headerTag']             ? $c['fry_headerTag']              : $d['accessible_tabs_tabhead'],
             'accessible_tabs_position'                  => $c['fry_tabPosition']           ? $c['fry_tabPosition']            : $d['accessible_tabs_position'],
-            'accessible_tabs_sync_heights'              => $c['fry_syncHeights']           ? $c['fry_syncHeights']            : $d['accessible_tabs_sync_heights'],
+            'accessible_tabs_syncheight'                => $c['fry_syncHeights']           ? $c['fry_syncHeights']            : $d['accessible_tabs_sync_heights'],
             'accessible_tabs_save_state'                => $c['fry_saveState']             ? $c['fry_saveState']              : $d['accessible_tabs_save_state'],
             'accessible_tabs_auto_anchor'               => $c['fry_autoAnchor']            ? $c['fry_autoAnchor']             : $d['accessible_tabs_auto_anchor'],
             'accessible_tabs_pagination'                => $c['fry_pagination']            ? $c['fry_pagination']             : $d['accessible_tabs_pagination'],
@@ -101,7 +101,7 @@ class AccessibleTabsRunonce extends Controller
             'accessible_tabs_tabs_list_class'           => $c['fry_tabsListClass']         ? $c['fry_tabsListClass']          : $d['accessible_tabs_tabs_list_class'],
             'accessible_tabs_first_nav_item_class'      => $c['fry_firstNavItemClass']     ? $c['fry_firstNavItemClass']      : $d['accessible_tabs_first_nav_item_class'],
             'accessible_tabs_last_nav_item_class'       => $c['fry_lastNavItemClass']      ? $c['fry_lastNavItemClass']       : $d['accessible_tabs_last_nav_item_class'],
-            'accessible_tabs_clearfix_class'            => 'clearfix',
+            'accessible_tabs_clearfix_class'            => 'block',
             'accessible_tabs_css_class_available'       => $c['fry_cssClassAvailable']     ? $c['fry_cssClassAvailable']      : $d['accessible_tabs_css_class_available'],
             'accessible_tabs_wrap_inner_nav_links'      => $c['fry_wrapInnerNavLinks']     ? $c['fry_wrapInnerNavLinks']      : $d['accessible_tabs_wrap_inner_nav_links'],
             'accessible_tabs_sync_height_method_name'   => $c['fry_syncHeightsMethodName'] ? $c['fry_syncHeightsMethodName']  : $d['accessible_tabs_sync_height_method_name'],

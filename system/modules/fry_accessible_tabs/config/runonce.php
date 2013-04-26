@@ -101,7 +101,7 @@ class AccessibleTabsRunonce extends Controller
             'accessible_tabs_tabs_list_class'           => $c['fry_tabsListClass']         ? $c['fry_tabsListClass']          : $d['accessible_tabs_tabs_list_class'],
             'accessible_tabs_first_nav_item_class'      => $c['fry_firstNavItemClass']     ? $c['fry_firstNavItemClass']      : $d['accessible_tabs_first_nav_item_class'],
             'accessible_tabs_last_nav_item_class'       => $c['fry_lastNavItemClass']      ? $c['fry_lastNavItemClass']       : $d['accessible_tabs_last_nav_item_class'],
-            'accessible_tabs_clearfix_class'            => 'clearfix',
+            'accessible_tabs_clearfix_class'            => 'block',
             'accessible_tabs_css_class_available'       => $c['fry_cssClassAvailable']     ? $c['fry_cssClassAvailable']      : $d['accessible_tabs_css_class_available'],
             'accessible_tabs_wrap_inner_nav_links'      => $c['fry_wrapInnerNavLinks']     ? $c['fry_wrapInnerNavLinks']      : $d['accessible_tabs_wrap_inner_nav_links'],
             'accessible_tabs_sync_height_method_name'   => $c['fry_syncHeightsMethodName'] ? $c['fry_syncHeightsMethodName']  : $d['accessible_tabs_sync_height_method_name'],
