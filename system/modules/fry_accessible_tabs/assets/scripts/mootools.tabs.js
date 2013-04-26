@@ -85,6 +85,7 @@ var AccessibleTabs = new Class({
        wrapperClass: 'content', // Classname to apply to the div that is wrapped around the original Markup
        currentClass: 'current', // Classname to apply to the LI of the selected Tab
        tabhead: 'h4', // Tag or valid Query Selector of the Elements to Transform the Tabs-Navigation from (originals are removed)
+       tabheadClass:'tabhead',
        tabbody: '.tabbody', // Tag or valid Query Selector of the Elements to be treated as the Tab Body
        fx:'show', // can be "fadeIn", "slideDown", "show"
        fxspeed: 'normal', // speed (String|Number): "short", "normal", or "long") or the number of milliseconds to run the animation
@@ -167,9 +168,13 @@ var AccessibleTabs = new Class({
 				if(index != 0) { tabbody.hide(); }
 			});
 			$innerWrap.grab(
-				new Element(tabheadTagName).grab(
+				new Element(
+                    tabheadTagName, {
+                        'class': self.options.tabheadClass
+                    }
+                ).grab(
 					new Element('a', {'tabindex': '0', 
-								'class':'accessibletabsanchor', 
+								'class':'accessibletabsanchor',
 								'name':contentAnchor, 
 								'id': contentAnchor, 
 								'text': firstText}))
