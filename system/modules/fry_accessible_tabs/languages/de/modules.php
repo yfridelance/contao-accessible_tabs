@@ -43,8 +43,8 @@ $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_tabhead'][0]         
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_tabhead'][1]                   = 'Wählen sie das korespondierende Header Tag aus.';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_position'][0]                  = 'Positionierung';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_position'][1]                  = 'Legen sie die Position des Listen-Elementes im Markup fest.';
-$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_sync_heights'][0]              = 'Höhe Synchronisieren';
-$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_sync_heights'][1]              = 'Aktiviert das SyncHeights Plugin.';
+$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_syncheights'][0]               = 'Höhe Synchronisieren';
+$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_syncheights'][1]               = 'Aktiviert das SyncHeights Plugin.';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_save_state'][0]                = 'Zustand Speichern';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_save_state'][1]                = 'Zustand wird in einem Cookie gespeichert.';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_auto_anchor'][0]               = 'Verlinkbare Tabs';

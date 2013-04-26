@@ -67,7 +67,7 @@ $GLOBALS['TL_ACCESSIBLE_TABS_DEFAULTS']['jquery'] = array(
 
     'accessible_tabs_tabhead'                   => 'h4',
     'accessible_tabs_position'                  => top,
-    'accessible_tabs_syncheight'                => false,
+    'accessible_tabs_syncheights'               => false,
     'accessible_tabs_save_state'                => false,
     'accessible_tabs_auto_anchor'               => false,
     'accessible_tabs_pagination'                => false,
@@ -94,7 +94,7 @@ $GLOBALS['TL_ACCESSIBLE_TABS_DEFAULTS']['mootools'] = array(
 
     'accessible_tabs_tabhead'                   => 'h4',
     'accessible_tabs_position'                  => '',
-    'accessible_tabs_syncheight'                => false,
+    'accessible_tabs_syncheights'               => false,
     'accessible_tabs_save_state'                => false,
     'accessible_tabs_auto_anchor'               => false,
     'accessible_tabs_pagination'                => false,
@@ -112,53 +112,3 @@ $GLOBALS['TL_ACCESSIBLE_TABS_DEFAULTS']['mootools'] = array(
     'accessible_tabs_wrap_inner_nav_links'      => false,
     'accessible_tabs_sync_height_method_name'   => 'SyncHeight',
 );
-
-
-//class test extends Controller
-//{
-//
-//    protected $db;
-//
-//    public function __construct()
-//    {
-//        $this->db = Database::getInstance();
-//    }
-//
-//    public function run()
-//    {
-//        if($this->db->fieldExists('id','tl_content'))
-//        {
-//            $sql = 'SELECT * FROM tl_content';
-//            $stmt = $this->db->prepare($sql);
-//            if($objRes = $stmt->execute())
-//            {
-//                //print_r($objRes->fetchRow());
-//                //$i = 0;
-//                while($objRes->next())
-//                {
-//                    dump($objRes->id);
-//
-//                    if($objRes->fry_tabsType)
-//                    {
-//                        $sql = 'UPDATE tl_content SET accessible_tabs_type=?, accessible_tabs_tabhead=? WHERE id=?';
-//
-//                        $this->db->prepare($sql)
-//                            ->execute(
-//
-//                                // Fields
-//                                $objRes->fry_tabsType,
-//                                $objRes->fry_headerTag,
-//
-//                                // WHERE
-//                                $objRes->id
-//                            );
-//                    }
-//
-//                }
-//            }
-//        }
-//    }
-//}
-//
-//$test = new test();
-//$test->run();

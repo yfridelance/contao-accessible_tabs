@@ -32,4 +32,4 @@
  */
 
 
-$GLOBALS['TL_LANG']['CTE']['accessible_tabs']  = array('Accessible Tabs', 'Zugängliche Tabs erzeugen.');
+$GLOBALS['TL_LANG']['CTE']['fry_accessible_tabs']  = array('Accessible Tabs', 'Zugängliche Tabs erzeugen.');

@@ -55,25 +55,11 @@ $GLOBALS['TL_DCA']['tl_accessible_tabs'] = array
 
     'palettes'  => array(
         'default'   => '{accessible_tabs_settings_legend},accessible_tabs_load_settings,accessible_tabs_load_previous;
-                        {accessible_tabs_base_legend},accessible_tabs_tabhead,accessible_tabs_position,accessible_tabs_sync_heights,accessible_tabs_save_state,accessible_tabs_auto_anchor,accessible_tabs_pagination;
+                        {accessible_tabs_base_legend},accessible_tabs_tabhead,accessible_tabs_position,accessible_tabs_syncheights,accessible_tabs_save_state,accessible_tabs_auto_anchor,accessible_tabs_pagination;
                         {accessible_tabs_fx_legend},accessible_tabs_fx,accessible_tabs_fxspeed;
                         {accessible_tabs_selectors_legend},accessible_tabs_wrapper_class,accessible_tabs_current_class,accessible_tabs_tabhead_class,accessible_tabs_tabbody,accessible_tabs_tabs_list_class,accessible_tabs_first_nav_item_class,accessible_tabs_last_nav_item_class,accessible_tabs_clearfix_class;
                         {accessible_tabs_misc_legend},accessible_tabs_css_class_available,accessible_tabs_wrap_inner_nav_links,accessible_tabs_sync_height_method_name;'
     ),
-    // meta pallettes
-//    'metapalettes' => array
-//    (
-//        'default' => array
-//        (
-//            'accessible_tabs_settings'  => array('accessible_tabs_load_settings','accessible_tabs_load_previous'),
-//            'accessible_tabs_base'      => array('accessible_tabs_tabhead', 'accessible_tabs_position', 'accessible_tabs_sync_heights', 'accessible_tabs_save_state', 'accessible_tabs_auto_anchor', 'accessible_tabs_pagination'),
-//            'accessible_tabs_fx'        => array('accessible_tabs_fx','accessible_tabs_fxspeed'),
-//            'accessible_tabs_selectors' => array('accessible_tabs_wrapper_class', 'accessible_tabs_current_class', 'accessible_tabs_tabhead_class', 'accessible_tabs_tabbody', 'accessible_tabs_tabs_list_class', 'accessible_tabs_first_nav_item_class', 'accessible_tabs_last_nav_item_class', 'accessible_tabs_clearfix_class'),
-//            'accessible_tabs_misc'      => array('accessible_tabs_css_class_available','accessible_tabs_wrap_inner_nav_links', 'accessible_tabs_sync_height_method_name'),
-//
-//
-//        )
-//    ),
 
     // Fields
     'fields' => array
@@ -112,9 +98,9 @@ $GLOBALS['TL_DCA']['tl_accessible_tabs'] = array
             'options'                 => array('top', 'bottom'),
             'eval'                    => array('includeBlankOption'=>true, 'tl_class'=>'w50', 'chosen'=>false, 'disabled'=>$moo_only)
         ),
-        'accessible_tabs_sync_heights'       => array
+        'accessible_tabs_syncheights'       => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_sync_heights'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_syncheights'],
             'inputType'               => 'checkbox',
             'eval'                    => array('tl_class'=>'w50')
         ),
