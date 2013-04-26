@@ -1,0 +1,52 @@
+/**
+ * Accessible Tabs for Contao
+ * --------------------------
+ * jQuery || Mootools
+ */
+
+#group_93 {
+    width: 100%;
+    font-size: 93%;
+    line-height: normal;
+}
+
+#group_93 > ul {
+    margin: 0;
+    padding: 10px 10px 0;
+    list-style: none;
+}
+
+#group_93 > ul > li {
+    float: left;
+    margin-right: 5px;
+    padding: 0;
+    background-color: #F8F5EF;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#group_93 > ul > li > a {
+    float: left;
+    display: block;
+    padding: 5px 15px 4px;
+}
+
+#group_93 > ul > li > a:hover {
+    color: #333;
+}
+
+#group_93 > div {
+    clear: both;
+    margin-top: -1px;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #333;
+}
+
+#group_93 .current-info, #group_93 .tabhead {
+    left: -999em;
+    position: absolute;
+}
