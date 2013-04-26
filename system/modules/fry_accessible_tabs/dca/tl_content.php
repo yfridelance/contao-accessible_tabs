@@ -194,7 +194,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_clearfix_class'] = a
     'default'           => $GLOBALS['TL_CONFIG']['accessible_tabs_clearfix_class'],
     'exclude'           => true,
     'inputType'         => 'text',
-    'eval'              => array('tl_class'=>'w50', 'disabled'=>$moo_only)
+    'eval'              => array('tl_class'=>'w50')
 );
 
 /* Misc */

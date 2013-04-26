@@ -199,7 +199,7 @@ $GLOBALS['TL_DCA']['tl_accessible_tabs'] = array
         (
             'label'                   => &$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_clearfix_class'],
             'inputType'               => 'text',
-            'eval'                    => array('tl_class'=>'w50', 'disabled'=>$moo_only)
+            'eval'                    => array('tl_class'=>'w50')
         ),
 
 
