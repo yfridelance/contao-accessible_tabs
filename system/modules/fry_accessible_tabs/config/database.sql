@@ -2,7 +2,7 @@ CREATE TABLE `tl_content` (
 	`accessible_tabs_type` varchar(32) NOT NULL default '',
 	`accessible_tabs_tabhead` varchar(2) NULL default '',
 	`accessible_tabs_position` varchar(32) NULL default '',
-	`accessible_tabs_sync_heights` char(1) NULL default '',
+	`accessible_tabs_syncheight` char(1) NULL default '',
 	`accessible_tabs_save_state` char(1) NULL default '',
 	`accessible_tabs_auto_anchor` char(1) NULL default '',
 	`accessible_tabs_pagination` char(1) NULL default '',

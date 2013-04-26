@@ -43,7 +43,7 @@ $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][]      = array('DC
 $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][]       = 'accessible_tabs_type';
 
 $GLOBALS['TL_DCA']['tl_content']['palettes']['accessible_tabs']      = '{type_legend},type,accessible_tabs_type;';
-$GLOBALS['TL_DCA']['tl_content']['palettes']['accessible_tabsStart'] = '{type_legend},type,accessible_tabs_type;{accessible_tabs_start_legend},headline;{accessible_tabs_base_legend},accessible_tabs_tabhead,accessible_tabs_position,accessible_tabs_sync_heights,accessible_tabs_save_state,accessible_tabs_auto_anchor,accessible_tabs_pagination;{accessible_tabs_fx_legend:hide},accessible_tabs_fx,accessible_tabs_fxspeed;{accessible_tabs_selectors_legend:hide},accessible_tabs_wrapper_class,accessible_tabs_current_class,accessible_tabs_tabhead_class,accessible_tabs_tabbody,accessible_tabs_list_class,accessible_tabs_first_nav_item_class,accessible_tabs_last_nav_item_class,accessible_tabs_clearfix_class;{accessible_tabs_misc_legend},accessible_tabs_css_class_available,accessible_tabs_wrap_inner_nav_links,accessible_tabs_sync_height_method_name;{expert_legend:hide},cssID,space;';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['accessible_tabsStart'] = '{type_legend},type,accessible_tabs_type;{accessible_tabs_start_legend},headline;{accessible_tabs_base_legend},accessible_tabs_tabhead,accessible_tabs_position,accessible_tabs_syncheight,accessible_tabs_save_state,accessible_tabs_auto_anchor,accessible_tabs_pagination;{accessible_tabs_fx_legend:hide},accessible_tabs_fx,accessible_tabs_fxspeed;{accessible_tabs_selectors_legend:hide},accessible_tabs_wrapper_class,accessible_tabs_current_class,accessible_tabs_tabhead_class,accessible_tabs_tabbody,accessible_tabs_list_class,accessible_tabs_first_nav_item_class,accessible_tabs_last_nav_item_class,accessible_tabs_clearfix_class;{accessible_tabs_misc_legend},accessible_tabs_css_class_available,accessible_tabs_wrap_inner_nav_links,accessible_tabs_sync_height_method_name;{expert_legend:hide},cssID,space;';
 $GLOBALS['TL_DCA']['tl_content']['palettes']['accessible_tabsAdd']   = '{type_legend},type,accessible_tabs_type;{accessible_tabs_break_legend},accessible_tabs_title,accessible_tabs_anchor;{protected_legend:hide},protected;';
 $GLOBALS['TL_DCA']['tl_content']['palettes']['accessible_tabsStop']  = '{type_legend},type,accessible_tabs_type;';
 
@@ -81,9 +81,9 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_position'] = array(
     'eval'              => array('includeBlankOption'=>true, 'tl_class'=>'w50', 'chosen'=>false, 'disabled'=>$moo_only)
 );
 
-$GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_sync_heights'] = array(
-    'label'			    => &$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_sync_heights'],
-    'default'           => $GLOBALS['TL_CONFIG']['accessible_tabs_sync_heights'],
+$GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_syncheight'] = array(
+    'label'			    => &$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_syncheight'],
+    'default'           => $GLOBALS['TL_CONFIG']['accessible_tabs_syncheight'],
     'exclude'           => true,
     'inputType'         => 'checkbox',
     'eval'              => array('tl_class'=>'w50')

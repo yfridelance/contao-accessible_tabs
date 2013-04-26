@@ -88,7 +88,7 @@ class AccessibleTabsRunonce extends Controller
 
             'accessible_tabs_tabhead'                   => $c['fry_headerTag']             ? $c['fry_headerTag']              : $d['accessible_tabs_tabhead'],
             'accessible_tabs_position'                  => $c['fry_tabPosition']           ? $c['fry_tabPosition']            : $d['accessible_tabs_position'],
-            'accessible_tabs_sync_heights'              => $c['fry_syncHeights']           ? $c['fry_syncHeights']            : $d['accessible_tabs_sync_heights'],
+            'accessible_tabs_syncheight'                => $c['fry_syncHeights']           ? $c['fry_syncHeights']            : $d['accessible_tabs_sync_heights'],
             'accessible_tabs_save_state'                => $c['fry_saveState']             ? $c['fry_saveState']              : $d['accessible_tabs_save_state'],
             'accessible_tabs_auto_anchor'               => $c['fry_autoAnchor']            ? $c['fry_autoAnchor']             : $d['accessible_tabs_auto_anchor'],
             'accessible_tabs_pagination'                => $c['fry_pagination']            ? $c['fry_pagination']             : $d['accessible_tabs_pagination'],

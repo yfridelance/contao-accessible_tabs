@@ -67,7 +67,7 @@ $GLOBALS['TL_ACCESSIBLE_TABS_DEFAULTS']['jquery'] = array(
 
     'accessible_tabs_tabhead'                   => 'h4',
     'accessible_tabs_position'                  => top,
-    'accessible_tabs_sync_heights'              => false,
+    'accessible_tabs_syncheight'                => false,
     'accessible_tabs_save_state'                => false,
     'accessible_tabs_auto_anchor'               => false,
     'accessible_tabs_pagination'                => false,
@@ -94,7 +94,7 @@ $GLOBALS['TL_ACCESSIBLE_TABS_DEFAULTS']['mootools'] = array(
 
     'accessible_tabs_tabhead'                   => 'h4',
     'accessible_tabs_position'                  => '',
-    'accessible_tabs_sync_heights'              => false,
+    'accessible_tabs_syncheight'                => false,
     'accessible_tabs_save_state'                => false,
     'accessible_tabs_auto_anchor'               => false,
     'accessible_tabs_pagination'                => false,

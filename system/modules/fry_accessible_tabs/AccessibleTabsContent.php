@@ -62,7 +62,7 @@ class AccessibleTabsContent extends ContentElement
 
                 $id = 'group_' . $this->id;
 
-                if($this->accessible_tabs_sync_heights) { $this->DS->setEnableSyncHeight(true); }
+                if($this->accessible_tabs_syncheight) { $this->DS->setEnableSyncHeight(true); }
                 if($this->accessible_tabs_save_state || $this->accessible_tabs_auto_anchor) { $this->DS->setEnableCookiePlugin(true); }
 
                 $tabDS = $this->DS->getTabElementDS();
@@ -70,7 +70,7 @@ class AccessibleTabsContent extends ContentElement
 
                 $tabDS->setData('accessible_tabs_tabhead',                 $this->accessible_tabs_tabhead);
                 $tabDS->setData('accessible_tabs_position',                $this->accessible_tabs_position);
-                $tabDS->setData('accessible_tabs_sync_heights',            $this->accessible_tabs_sync_heights);
+                $tabDS->setData('accessible_tabs_syncheight',            $this->accessible_tabs_sync_heights);
                 $tabDS->setData('accessible_tabs_save_state',              $this->accessible_tabs_save_state);
                 $tabDS->setData('accessible_tabs_auto_anchor',             $this->accessible_tabs_auto_anchor);
                 $tabDS->setData('accessible_tabs_pagination',              $this->accessible_tabs_pagination);
