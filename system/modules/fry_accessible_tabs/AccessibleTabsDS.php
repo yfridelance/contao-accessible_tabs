@@ -220,6 +220,7 @@ class AccessibleTabsDS
         foreach($this->arrTabElementDS as $ds)
         {
             $arrOptions = $ds->getData();
+            $arrOptions['accessible_tabs_tabhead'] = '.'.$arrOptions['accessible_tabs_wrapper_class'].'>'.$arrOptions['accessible_tabs_tabhead'];
             foreach($arrOptions as $k => $v)
             {
                 if($defaults[$k] == $v)
