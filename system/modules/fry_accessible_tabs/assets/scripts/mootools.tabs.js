@@ -18,7 +18,7 @@
  *
  * @copyright  must art 2010
  * @author     Jan Philipp Pietrzyk <programming@must-art.de>
- * @package    
+ * @package
  * @license    LGPL
  *
  * Version 1.0.1
@@ -29,10 +29,10 @@
  *
  * Based on the incredible jquery.tabs v1.5 by Dirk Ginader (ginader.de) at http://github.com/ginader/Accessible-Tabs
  *
- * ToDo: 
+ * ToDo:
  * - Check intended Behaviour for Key-Listener (Bug in original Class?)
- * - original script did NOT make it possible to use selector as tabhead 
- * 
+ * - original script did NOT make it possible to use selector as tabhead
+ *
  *
 */
 
@@ -108,11 +108,11 @@ var AccessibleTabs = new Class({
 		this.setOptions(options);
 		/*Eat your own doogfood: the fxoptions are implemented as events*/
 		switch(options.fx) {
-			case 'fadeIn': 
+			case 'fadeIn':
 				this.addEvent('showContent', function(event) {
 					event.preventDefault();
 					event.contentElement.setStyle('opacity', 0).show().get('tween', {property: 'opacity', duration: this.options.fxspeed}).start(1);//tween('opacity', 1);
-				});	
+				});
 				break;
 			case 'slideDown':
 				/*Also MootoolsMore dependent, default to 'show'*/
@@ -128,11 +128,11 @@ var AccessibleTabs = new Class({
 				break;
 		}
 		/*just to cover multiple Tabs-Navigations in one instance*/
-		$elements.each(function($el) {		
+		$elements.each(function($el) {
 			this.makeElement($el);
 		}, this)
 		return this;
-					
+
 	},
 	makeElement: function($el) {
 			$el = document.id($el);
@@ -149,7 +149,7 @@ var AccessibleTabs = new Class({
 
 			$innerWrap.inject($el, 'top');
 			$innerWrap.adopt($$containerChildren);
-			
+
 			$el.getElements(self.options.tabhead).each(function($tabhead, index){
 				var id = '';
 				tabheadTagName = $tabhead.get('tag');
@@ -161,7 +161,7 @@ var AccessibleTabs = new Class({
 				$tabhead.dispose();
 				tabCount++;
 			});
-			
+
 			var $list = new Element('ul', {'class': self.options.clearfixClass+' '+self.options.tabsListClass+' tabamount'+tabCount}).adopt($$list);
 			$list.inject($el, 'top');
 			$el.getElements(self.options.tabbody).each(function(tabbody, index){
@@ -173,26 +173,26 @@ var AccessibleTabs = new Class({
                         'class': self.options.tabheadClass
                     }
                 ).grab(
-					new Element('a', {'tabindex': '0', 
+					new Element('a', {'tabindex': '0',
 								'class':'accessibletabsanchor',
-								'name':contentAnchor, 
-								'id': contentAnchor, 
+								'name':contentAnchor,
+								'id': contentAnchor,
 								'text': firstText}))
 			, 'top');
 
 			$el.getElement('ul').getChildren()[0].addClass(self.options.currentClass).getChildren('a')[0].grab($currentSpan, (self.options.currentInfoPosition == 'prepend') ? 'top' : 'bottom');
 			var $contentAnchor = $(contentAnchor);
-			
-			
+
+
 			if(self.options.syncheights && self.options.syncHeightsClassName) {
 				new window[self.options.syncHeightsClassName]($el.getElements(self.options.tabbody));
 			}
-			
+
 
 			$el.getElements('ul.'+self.options.tabsListClass+'>li>a').each(function($a, index){
 				$a.addEvent('click', function(event) {
 					var oldCurrent = 0;
-					
+
 					oldCurrent = $el.getElement('ul.'+self.options.tabsListClass+' li.'+self.options.currentClass).removeClass(self.options.currentClass).getAllPrevious().length
 
 					$currentSpan.dispose();
@@ -210,12 +210,12 @@ var AccessibleTabs = new Class({
 						customEvent.contentElement.hide();
 					}
 					customEvent.pd = false;
-					customEvent.contentElement = $el.getElements(self.options.tabbody)[index];					
+					customEvent.contentElement = $el.getElements(self.options.tabbody)[index];
 					self.fireEvent('showContent', customEvent);
 					if(!customEvent.pd) {
 						customEvent.contentElement.show();
 					}
-					
+
 					var keyEventFunc = function(event) {
 							if(self.keyCodes[event.code]) {
 								self.showAccessibleTab(index+self.keyCodes[event.code], $el);
@@ -226,12 +226,12 @@ var AccessibleTabs = new Class({
 					$contentAnchor.set({'text': $a.get('text')});
 					$contentAnchor.focus();
 					$contentAnchor.addEvent('keyup', keyEventFunc);
-					
+
 					$a.grab($currentSpan, (self.options.currentInfoPosition == 'prepend') ? 'top' : 'bottom').getParent().addClass(self.options.currentClass);
 
 					return false;
 				});
-				
+
 				var keyUpFunc = function(event) {
 					$(document).addEvent('keyup', function(event){
 						if(self.keyCodes[event.code]) {
@@ -240,13 +240,13 @@ var AccessibleTabs = new Class({
 					});
 				}
 				$a.addEvent('focus', keyUpFunc);
-			
+
 				$a.addEvent('blur', function(event) {
 					$(document).removeEvents('keyup');
 				});
-			
+
 			});
-			
+
 			return self;
 
 	},

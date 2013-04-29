@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" name="Default" comment="fix: clearfix bug">
+    <list default="true" id="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsDS.php" afterPath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsDS.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js" afterPath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contao-accessible_tabs.iws" />
     <ignored mask="workspace.xml" />
     <ignored mask=".idea/" />
-    <file path="/Dummy.txt" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367093822473" ignored="false" />
+    <file path="/Dummy.txt" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367213874374" ignored="false" />
     <file path="/test.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1365858473426" ignored="false" />
     <file path="/accessibleTabsConfig.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1365860704401" ignored="false" />
     <file path="/a.dummy" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366227155865" ignored="false" />
@@ -147,7 +148,8 @@
     <file path="$PROJECT_DIR$/system/modules/accessible_tabs/dca/tl_content.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366871962160" ignored="false" />
     <file path="/mootools.tabs.js" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366974469999" ignored="false" />
     <file path="/demo.css" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366977177719" ignored="false" />
-    <file path="$PROJECT_DIR$/../lts/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367099369461" ignored="false" />
+    <file path="$PROJECT_DIR$/../lts/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367128511825" ignored="false" />
+    <file path="$PROJECT_DIR$/../lts/system/modules/fry_accessible_tabs/AccessibleTabsDS.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367128511825" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,73 +169,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="runonce.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/config/runonce.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="54" selection-start="9647" selection-end="9647" vertical-scroll-proportion="-11.416667">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.tabs.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/jquery.tabs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="27" selection-start="5019" selection-end="5019" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccessibleTabsDS.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/AccessibleTabsDS.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="145" selection-start="4619" selection-end="4752" vertical-scroll-proportion="-10.791667">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AccessibleTabsDS.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsDS.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="145" selection-start="4752" selection-end="4752" vertical-scroll-proportion="0.30232558">
+            <state line="240" column="43" selection-start="5309" selection-end="5309" vertical-scroll-proportion="0.58762884">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccessibleTabsElementDS.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsElementDS.php">
+      <file leaf-file-name="mootools.tabs.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="23.75">
-              <folding />
+            <state line="180" column="21" selection-start="6525" selection-end="6882" vertical-scroll-proportion="-14.230769">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DCA_TL_Accessible_Tabs.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/DCA_TL_Accessible_Tabs.php">
+      <file leaf-file-name="mootools.tabs.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccessibleTabsContent.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="47" selection-start="2132" selection-end="2132" vertical-scroll-proportion="-8.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccessibleTabsContent.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/AccessibleTabsContent.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="75" selection-start="2160" selection-end="2160" vertical-scroll-proportion="-14.208333">
+            <state line="179" column="28" selection-start="6848" selection-end="6848" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -263,8 +222,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../lts/system/modules/fry_accessible_tabs/dca/tl_content.php" />
-        <option value="$PROJECT_DIR$/../lts/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/config/config.php" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/config/database.sql" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/config/runonce.php" />
@@ -273,12 +230,14 @@
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/runonce/runonce.php" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/modules.php" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php" />
-        <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js" />
         <option value="$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/jquery.tabs.js" />
         <option value="$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/AccessibleTabsDS.php" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsDS.php" />
+        <option value="$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/runonce/runonce.php" />
+        <option value="$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/DCA_TL_Accessible_Tabs.php" />
+        <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js" />
       </list>
     </option>
   </component>
@@ -1032,7 +991,11 @@
       <created>1366983668196</created>
       <updated>1366983668196</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="fix: header bug">
+      <created>1367100036528</created>
+      <updated>1367100036528</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1057,9 +1020,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19527364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19527364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.703125" order="1" side_tool="false" content_ui="tabs" />
@@ -1073,7 +1037,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1121,7 +1084,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: syncheight bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: JS Einbundung" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1135,8 +1098,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="fixes: runonce.php" />
-    <MESSAGE value="update runonce.php" />
     <MESSAGE value="fix: runonce.php" />
     <MESSAGE value="add reload selector // fix because 2.11 understand $this-&gt;reload()" />
     <MESSAGE value="fix: field allows null" />
@@ -1160,6 +1121,8 @@
     <MESSAGE value="fix: syncheights bug" />
     <MESSAGE value="fix: clearfix bug" />
     <MESSAGE value="fix: syncheight bug" />
+    <MESSAGE value="fix: header bug" />
+    <MESSAGE value="fix: JS Einbundung" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1167,51 +1130,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/modules.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="78" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="32" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/runonce/runonce.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="44" selection-start="2881" selection-end="2881" vertical-scroll-proportion="1.6100179">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/dca/tl_content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="77" selection-start="4687" selection-end="4687" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/jquery.syncheight.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/config/runonce.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="54" selection-start="9647" selection-end="9647" vertical-scroll-proportion="-11.416667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="19" selection-start="2307" selection-end="2319" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1230,27 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/assets/scripts/jquery.tabs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="69" selection-start="4955" selection-end="4977" vertical-scroll-proportion="0.6964286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/AccessibleTabsContent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="75" selection-start="2160" selection-end="2160" vertical-scroll-proportion="-14.208333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/jquery.tabs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="27" selection-start="5019" selection-end="5019" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="47" selection-start="2132" selection-end="2132" vertical-scroll-proportion="-8.125">
@@ -1258,23 +1158,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/AccessibleTabsElementDS.php">
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/jquery.tabs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="79" column="27" selection-start="5019" selection-end="5019" vertical-scroll-proportion="1.4922813">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/AccessibleTabsDS.php">
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/config/runonce.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="145" selection-start="4619" selection-end="4752" vertical-scroll-proportion="-10.791667">
+        <state line="154" column="54" selection-start="9647" selection-end="9647" vertical-scroll-proportion="0.4707904">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="28" selection-start="6848" selection-end="6848" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="21" selection-start="6525" selection-end="6882" vertical-scroll-proportion="-14.230769">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsDS.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="145" selection-start="4752" selection-end="4752" vertical-scroll-proportion="0.30232558">
+        <state line="240" column="43" selection-start="5309" selection-end="5309" vertical-scroll-proportion="0.58762884">
           <folding />
         </state>
       </provider>

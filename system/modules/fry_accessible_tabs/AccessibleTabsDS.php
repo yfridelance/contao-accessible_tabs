@@ -235,10 +235,10 @@ class AccessibleTabsDS
             );
         }
 
-        $GLOBALS['TL_JAVASCRIPT'][] = '/system/modules/fry_accessible_tabs/assets/scripts/' . $jsLib . '.tabs.js';
+        $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/fry_accessible_tabs/assets/scripts/' . $jsLib . '.tabs.js';
         if($this->enableSyncHeight)
         {
-            $GLOBALS['TL_JAVASCRIPT'][] = '/system/modules/fry_accessible_tabs/assets/scripts/' . $jsLib . '.syncheight.js';
+            $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/fry_accessible_tabs/assets/scripts/' . $jsLib . '.syncheight.js';
         }
         if($this->enableCookiePlugin && $jsLib == 'jquery')
         {
