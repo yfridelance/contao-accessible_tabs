@@ -87,12 +87,12 @@ class AccessibleTabsContent extends ContentElement
                 $tabDS->setData('accessible_tabs_css_class_available',     $this->accessible_tabs_css_class_available);
                 $tabDS->setData('accessible_tabs_wrap_inner_nav_links',    $this->accessible_tabs_wrap_inner_nav_links);
                 $tabDS->setData('accessible_tabs_sync_height_method_name', $this->accessible_tabs_sync_height_method_name);
+                $tabDS->setData('accessible_tabs_current_info_text',       $GLOBALS['TL_LANG']['MSC']['current_info_text']);
 
                 $this->Template       = new FrontendTemplate($this->strTemplate . '_wrapper');
                 $this->Template->mode = 'start';
                 $this->Template->id   = $id;
 
-                //print_r($this->DS->getJsTemplate());
             }
             else
             {

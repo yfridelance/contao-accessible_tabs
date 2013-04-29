@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" name="Default" comment="remove .idea">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" afterPath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php" afterPath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/modules.php" afterPath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/modules.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contao-accessible_tabs.iws" />
@@ -22,36 +25,27 @@
     <file path="$PROJECT_DIR$/../core/system/cache/language/en/languages.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366320917800" ignored="false" />
     <file path="$PROJECT_DIR$/../contao-htaccess/system/modules/htaccess/dca/tl_htaccess.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366062745516" ignored="false" />
     <file path="$PROJECT_DIR$/../core/system/modules/accessible_tabs/config/config.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366317857182" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/default.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366626462146" ignored="false" />
+    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/default.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367242538703" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/en/tl_settings.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366093096673" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/tl_settings.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366093096673" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/modules.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366378318929" ignored="false" />
+    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/modules.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367241612767" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/dca/tl_settings.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366119789739" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/languages.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366128630272" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/en/modules.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366378318929" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/en/default.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366626462147" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/en/languages.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366128630272" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/dca/tl_accessible_tabs.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366378318929" ignored="false" />
+    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/en/modules.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367241612767" ignored="false" />
+    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/en/default.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367242538703" ignored="false" />
+    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/en/languages.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367241567013" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/tl_htaccess.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366114222997" ignored="false" />
     <file path="/.htaccess" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366112760730" ignored="false" />
     <file path="/tl_content.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366619184448" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/dca/tl_user.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366626462146" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/dca/tl_article.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366626462146" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/en/tl_page.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366119789739" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/tl_user.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366126596094" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/dca/tl_htaccess.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366119789739" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/dca/tl_module.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366119789739" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/dca/tl_theme.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366626462146" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/tl_page.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366119789739" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/dca/tl_layout.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366626462147" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/tl_article.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366119789739" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/en/tl_user.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366126596094" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/en/tl_article.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366119789739" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/dca/tl_session.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366119789739" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/dca/tl_content.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366626462146" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/dca/tl_page.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366626462146" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/tl_content.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366626462147" ignored="false" />
-    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/en/tl_content.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366626462147" ignored="false" />
+    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/tl_content.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367242538703" ignored="false" />
+    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/en/tl_content.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367242538703" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/modules/accessible_tabs/config/config.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366126596094" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/modules/accessible_tabs/DCA_TL_Accessible_Tabs.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366747950326" ignored="false" />
     <file path="$PROJECT_DIR$/../my365.ch/core/system/modules/accessible_tabs/dca/tl_accessible_tabs.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366126596094" ignored="false" />
@@ -118,9 +112,9 @@
     <file path="$PROJECT_DIR$/../core/system/modules/accessible_tabs/dca/tl_content.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366143909436" ignored="false" />
     <file path="$PROJECT_DIR$/../core/system/modules/accessible_tabs/dca/tl_accessible_tabs.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366143909436" ignored="false" />
     <file path="$PROJECT_DIR$/../core/system/modules/accessible_tabs/DCA_TL_Accessible_Tabs.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366149358705" ignored="false" />
-    <file path="/AccessibleTabsDS.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367099743851" ignored="false" />
+    <file path="/AccessibleTabsDS.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367238362266" ignored="false" />
     <file path="/AccessibleTabsSingleTabGroup.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366184628491" ignored="false" />
-    <file path="/AccessibleTabsContent.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367097213499" ignored="false" />
+    <file path="/AccessibleTabsContent.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367242440955" ignored="false" />
     <file path="$PROJECT_DIR$/../core/system/modules/accessible_tabs/AccessibleTabsContent.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366310191623" ignored="false" />
     <file path="/ce_accessible_tabs.html5" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366965433914" ignored="false" />
     <file path="$PROJECT_DIR$/../core/system/modules/accessible_tabs/AccessibleTabsDS.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366310191623" ignored="false" />
@@ -149,6 +143,9 @@
     <file path="$PROJECT_DIR$/../lts/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367128511825" ignored="false" />
     <file path="$PROJECT_DIR$/../lts/system/modules/fry_accessible_tabs/AccessibleTabsDS.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367128511825" ignored="false" />
     <file path="/.gitignore" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367214477017" ignored="false" />
+    <file path="$PROJECT_DIR$/../lts/news.xml" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367226578520" ignored="false" />
+    <file path="/default.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367237749962" ignored="false" />
+    <file path="$PROJECT_DIR$/../my365.ch/core/system/cache/language/de/tl_accessible_tabs.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367242195634" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,15 +165,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AccessibleTabsDS.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsDS.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="1" selection-start="1289" selection-end="1289" vertical-scroll-proportion="-0.9608541">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="mootools.tabs.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -186,10 +174,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mootools.tabs.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js">
+      <file leaf-file-name="Frontend.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/core/classes/Frontend.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="179" column="28" selection-start="6848" selection-end="6848" vertical-scroll-proportion="0.0">
+            <state line="551" column="12" selection-start="13325" selection-end="13325" vertical-scroll-proportion="0.04">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContentImage.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/core/elements/ContentImage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="83" selection-start="802" selection-end="846" vertical-scroll-proportion="-6.9">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccessibleTabsContent.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="124" selection-start="4370" selection-end="4370" vertical-scroll-proportion="1.5747331">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/core/languages/de/default.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="188" column="42" selection-start="14656" selection-end="14670" vertical-scroll-proportion="-10.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="47" selection-start="1133" selection-end="1152" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
@@ -219,22 +243,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/config/database.sql" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/config/runonce.php" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/dca/tl_accessible_tabs.php" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/dca/tl_content.php" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/runonce/runonce.php" />
-        <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/modules.php" />
-        <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php" />
         <option value="$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/jquery.tabs.js" />
         <option value="$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/AccessibleTabsDS.php" />
-        <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" />
-        <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsDS.php" />
         <option value="$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/runonce/runonce.php" />
         <option value="$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/DCA_TL_Accessible_Tabs.php" />
         <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/tl_accessible_tabs.php" />
+        <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsDS.php" />
+        <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/modules.php" />
+        <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php" />
+        <option value="$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" />
       </list>
     </option>
   </component>
@@ -480,6 +504,202 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contao-accessible_tabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contao-accessible_tabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="languages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contao-accessible_tabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="languages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="de" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contao-accessible_tabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elements" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contao-accessible_tabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contao-accessible_tabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1140,49 +1360,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsDS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="43" selection-start="5309" selection-end="5309" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="21" selection-start="6525" selection-end="6882" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="28" selection-start="6848" selection-end="6848" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/jquery.syncheight.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsElementDS.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="23.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/DCA_TL_Accessible_Tabs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="47" selection-start="2132" selection-end="2132" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
@@ -1208,13 +1388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="21" selection-start="6525" selection-end="6882" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="10" selection-start="40" selection-end="40" vertical-scroll-proportion="0.050083473">
@@ -1222,9 +1395,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/tl_accessible_tabs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="141" selection-start="2972" selection-end="2972" vertical-scroll-proportion="-17.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/DCA_TL_Accessible_Tabs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="45" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.69573283">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.18181819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsDS.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="1" selection-start="1289" selection-end="1289" vertical-scroll-proportion="-0.9608541">
+        <state line="227" column="20" selection-start="4890" selection-end="4890" vertical-scroll-proportion="0.7740213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/assets/scripts/mootools.tabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="21" selection-start="6525" selection-end="6882" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/core/elements/ContentImage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="83" selection-start="802" selection-end="846" vertical-scroll-proportion="-6.9">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/modules.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="107" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.19480519">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/core/languages/de/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="188" column="42" selection-start="14656" selection-end="14670" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/core/classes/Frontend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="551" column="12" selection-start="13325" selection-end="13325" vertical-scroll-proportion="0.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="47" selection-start="1133" selection-end="1152" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="124" selection-start="4370" selection-end="4370" vertical-scroll-proportion="1.5747331">
           <folding />
         </state>
       </provider>
