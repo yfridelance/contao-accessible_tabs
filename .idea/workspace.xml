@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+    <list default="true" id="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" name="Default" comment="remove .idea">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contao-accessible_tabs.iws" />
     <ignored mask="workspace.xml" />
     <ignored mask=".idea/" />
-    <file path="/Dummy.txt" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367214546731" ignored="false" />
+    <file path="/Dummy.txt" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367214871994" ignored="false" />
     <file path="/test.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1365858473426" ignored="false" />
     <file path="/accessibleTabsConfig.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1365860704401" ignored="false" />
     <file path="/a.dummy" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366227155865" ignored="false" />
@@ -1001,7 +1001,11 @@
       <created>1367214514274</created>
       <updated>1367214514274</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="remove .idea">
+      <created>1367214560747</created>
+      <updated>1367214560747</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
