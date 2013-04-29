@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" name="Default" comment="remove .idea">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" afterPath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php" afterPath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/modules.php" afterPath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/modules.php" />
+    <list default="true" id="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contao-accessible_tabs.iws" />
     <ignored mask="workspace.xml" />
     <ignored mask=".idea/" />
-    <file path="/Dummy.txt" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367214871994" ignored="false" />
+    <file path="/Dummy.txt" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367242606395" ignored="false" />
     <file path="/test.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1365858473426" ignored="false" />
     <file path="/accessibleTabsConfig.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1365860704401" ignored="false" />
     <file path="/a.dummy" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366227155865" ignored="false" />
@@ -192,10 +189,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccessibleTabsContent.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AccessibleTabsContent.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="124" selection-start="4370" selection-end="4370" vertical-scroll-proportion="1.5747331">
+            <state line="89" column="124" selection-start="4370" selection-end="4370" vertical-scroll-proportion="-36.875">
               <folding />
             </state>
           </provider>
@@ -210,10 +207,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php">
+      <file leaf-file-name="modules.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/modules.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="47" selection-start="1133" selection-end="1152" vertical-scroll-proportion="-2.5">
+            <state line="37" column="107" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-0.5871886">
               <folding />
             </state>
           </provider>
@@ -1225,7 +1222,11 @@
       <created>1367214560747</created>
       <updated>1367214560747</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="add support for localized 'current-info-text'">
+      <created>1367242624636</created>
+      <updated>1367242624636</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1250,10 +1251,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1940874" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1940874" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.703125" order="1" side_tool="false" content_ui="tabs" />
@@ -1314,7 +1315,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="add support for localized 'current-info-text'" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1328,7 +1329,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="fix: change fieldsettings" />
     <MESSAGE value="feature: remove the fry_accessible_tabs folder from the file system" />
     <MESSAGE value="Add Icon to BE Module" />
     <MESSAGE value="Clear Code" />
@@ -1353,6 +1353,7 @@
     <MESSAGE value="remove workspace.xml" />
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="remove .idea" />
+    <MESSAGE value="add support for localized 'current-info-text'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1437,9 +1438,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/modules.php">
+    <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/core/classes/Frontend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="107" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.19480519">
+        <state line="551" column="12" selection-start="13325" selection-end="13325" vertical-scroll-proportion="0.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="124" selection-start="4370" selection-end="4370" vertical-scroll-proportion="-36.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="47" selection-start="1133" selection-end="1152" vertical-scroll-proportion="0.104347825">
           <folding />
         </state>
       </provider>
@@ -1451,23 +1466,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../my365.ch/core/system/modules/core/classes/Frontend.php">
+    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/modules.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="551" column="12" selection-start="13325" selection-end="13325" vertical-scroll-proportion="0.04">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="47" selection-start="1133" selection-end="1152" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/AccessibleTabsContent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="124" selection-start="4370" selection-end="4370" vertical-scroll-proportion="1.5747331">
+        <state line="37" column="107" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-0.5871886">
           <folding />
         </state>
       </provider>
