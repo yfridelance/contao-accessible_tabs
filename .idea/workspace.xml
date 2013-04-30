@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/en/default.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/en/modules.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/en/tl_accessible_tabs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/en/tl_content.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contao-accessible_tabs.iws" />
     <ignored mask="workspace.xml" />
     <ignored mask=".idea/" />
-    <file path="/Dummy.txt" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367242606395" ignored="false" />
+    <file path="/Dummy.txt" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367301368230" ignored="false" />
     <file path="/test.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1365858473426" ignored="false" />
     <file path="/accessibleTabsConfig.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1365860704401" ignored="false" />
     <file path="/a.dummy" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366227155865" ignored="false" />
@@ -1209,7 +1205,11 @@
       <created>1367242624636</created>
       <updated>1367242624636</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add en language file">
+      <created>1367301388404</created>
+      <updated>1367301388404</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1298,7 +1298,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add support for localized 'current-info-text'" />
+    <option name="LAST_COMMIT_MESSAGE" value="add en language file" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1312,7 +1312,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="feature: remove the fry_accessible_tabs folder from the file system" />
     <MESSAGE value="Add Icon to BE Module" />
     <MESSAGE value="Clear Code" />
     <MESSAGE value="update: jquery.tabs.js" />
@@ -1337,6 +1336,7 @@
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="remove .idea" />
     <MESSAGE value="add support for localized 'current-info-text'" />
+    <MESSAGE value="add en language file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
