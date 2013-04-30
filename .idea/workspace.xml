@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" name="Default" comment="">
+    <list default="true" id="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" name="Default" comment="add en language file">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contao-accessible_tabs.iws" />
     <ignored mask="workspace.xml" />
     <ignored mask=".idea/" />
-    <file path="/Dummy.txt" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367301368230" ignored="false" />
+    <file path="/Dummy.txt" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1367301500946" ignored="false" />
     <file path="/test.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1365858473426" ignored="false" />
     <file path="/accessibleTabsConfig.php" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1365860704401" ignored="false" />
     <file path="/a.dummy" changelist="b47e0ea3-69d8-4d7b-abe0-fb8d3a469432" time="1366227155865" ignored="false" />
@@ -1209,7 +1209,11 @@
       <created>1367301388404</created>
       <updated>1367301388404</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="add en language file">
+      <created>1367301437562</created>
+      <updated>1367301437562</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1344,13 +1348,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/de/tl_accessible_tabs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="141" selection-start="2972" selection-end="2972" vertical-scroll-proportion="-17.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/DCA_TL_Accessible_Tabs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="112" column="45" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.69573283">
@@ -1452,6 +1449,13 @@
     <entry file="file://$PROJECT_DIR$/system/modules/fry_accessible_tabs/languages/en/default.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="70" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.15652174">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
