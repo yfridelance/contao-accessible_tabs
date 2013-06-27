@@ -1,3 +1,11 @@
-.idea/*
+# OS
 .DS_Store
-system.zip
+Thumbs.db
+
+# IDEs
+.buildpath
+.project
+.settings/
+.build/
+.idea/
+nbproject/
