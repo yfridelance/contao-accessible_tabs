@@ -35,15 +35,28 @@
 /**
  * Register the classes
  */
-ClassLoader::addClasses(array
-(
-    'DC_File_AccessibleTabs'        => 'system/drivers/DC_File_AccessibleTabs.php',
-    'DCA_TL_Accessible_Tabs'        => 'system/modules/fry_accessible_tabs/DCA_TL_Accessible_Tabs.php',
-    'AccessibleTabsConfig'          => 'system/modules/fry_accessible_tabs/AccessibleTabsConfig.php',
-    'AccessibleTabsContent'         => 'system/modules/fry_accessible_tabs/AccessibleTabsContent.php',
-    'AccessibleTabsDS'              => 'system/modules/fry_accessible_tabs/AccessibleTabsDS.php',
-    'AccessibleTabsElementDS'       => 'system/modules/fry_accessible_tabs/AccessibleTabsElementDS.php',
-));
+
+if(version_compare(VERSION < '3.1')) {
+    ClassLoader::addClasses(array
+    (
+        'DC_File_AccessibleTabs'        => 'system/drivers/DC_File_AccessibleTabs.php',
+        'DCA_TL_Accessible_Tabs'        => 'system/modules/fry_accessible_tabs/DCA_TL_Accessible_Tabs.php',
+        'AccessibleTabsConfig'          => 'system/modules/fry_accessible_tabs/AccessibleTabsConfig.php',
+        'AccessibleTabsContent'         => 'system/modules/fry_accessible_tabs/AccessibleTabsContent.php',
+        'AccessibleTabsDS'              => 'system/modules/fry_accessible_tabs/AccessibleTabsDS.php',
+        'AccessibleTabsElementDS'       => 'system/modules/fry_accessible_tabs/AccessibleTabsElementDS.php',
+    ));
+} else {
+    ClassLoader::addClasses(array
+    (
+        'DC_File_AccessibleTabs'        => 'system/drivers/DC_File_AccessibleTabs.php',
+        'DCA_TL_Accessible_Tabs'        => 'system/modules/fry_accessible_tabs/DCA_TL_Accessible_Tabs.php',
+        'AccessibleTabsConfig'          => 'system/modules/fry_accessible_tabs/classes/AccessibleTabsConfig.php',
+        'AccessibleTabsContent'         => 'system/modules/fry_accessible_tabs/AccessibleTabsContent.php',
+        'AccessibleTabsDS'              => 'system/modules/fry_accessible_tabs/AccessibleTabsDS.php',
+        'AccessibleTabsElementDS'       => 'system/modules/fry_accessible_tabs/AccessibleTabsElementDS.php',
+    ));
+}
 
 
 /**
