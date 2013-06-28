@@ -217,7 +217,7 @@ class AccessibleTabsConfig extends Config
     {
         if (preg_match('#^\$GLOBALS\[\'TL_CONFIG\'\]\[\'accessible_tabs_[^\']+\'\]$#', $strKey))
         {
-            return $this->arrAccessibleTabsData[$strKey];
+            return self::$objInstance->arrAccessibleTabsData[$strKey];
         }
         else
         {
