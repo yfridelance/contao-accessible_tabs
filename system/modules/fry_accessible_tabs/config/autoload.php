@@ -36,7 +36,7 @@
  * Register the classes
  */
 
-if(version_compare(VERSION < '3.1')) {
+if(version_compare(VERSION, '3.1', '<')) {
     ClassLoader::addClasses(array
     (
         'DC_File_AccessibleTabs'        => 'system/drivers/DC_File_AccessibleTabs.php',
