@@ -30,7 +30,6 @@ Use Accessible Tabs
 System Compatibility
 --------------------
 
- * Contao 2.11.x
  * Contao 3.0.6
  * Mootools / JQuery
 
