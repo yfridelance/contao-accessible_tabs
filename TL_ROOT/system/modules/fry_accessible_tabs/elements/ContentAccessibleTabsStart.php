@@ -25,6 +25,34 @@ namespace FRY;
  * @package    fry_accessible_tabs
  */
 class ContentAccessibleTabsStart extends \ContentElement {
+	
+	protected $defaults = array
+			  	(
+			  		'wrapperClass'			=> 'content',
+			  		'currentClass'			=> 'current',
+			  		'tabhead'				=> 'h4',
+			  		'tabheadClass'			=> 'tabhead',
+			  		'tabbody'				=> '.tabbody',
+			  		'fx'					=> 'fx',
+			  		'fxspeed'				=> 'fxspeed',
+			  		'currentInfoText'		=> 'current tab:',
+			  		'currentInfoPosition'	=> 'prepend',
+			  		'currentInfoClass'		=> 'current-info',
+			  		'tabsListClass'			=> 'tabs-list',
+			  		'syncheights'			=> false,
+			  		'syncHeightMethodeName'	=> 'syncHeight',
+			  		'cssClassAvailable'		=> false,
+			  		'saveState'				=> false,
+			  		'autoAnchor'			=> false,
+			  		'pagination'			=> false,
+			  		'position'				=> 'top',
+			  		'wrapperInnerNavLinks'	=> '',
+			  		'firstNavItemClass'		=> 'first',
+			  		'lastNavItemClass'		=> 'last',
+			  		'clearfixClass'			=> 'clearfix',
+			  		'responsive'			=> false,
+			  		'responsiveToggleClass'	=> 'open'
+			  	);
 
     protected $strTemplate = 'ce_accessible_tabs_start';
 
@@ -37,35 +65,54 @@ class ContentAccessibleTabsStart extends \ContentElement {
             $this->Template = new \FrontendTemplate($this->strTemplate);
             $this->Template->tabbody            = $this->accessible_tabs_tabbody;
 
-            $data = array(
-                'data-tabhead'                  => $this->accessible_tabs_wrapper_class ? ".".$this->accessible_tabs_wrapper_class.">".$this->accessible_tabs_tabhead : $this->accessible_tabs_tabhead,
-                'data-position'                 => $this->accessible_tabs_position,
-                'data-sync-heights'             => $this->accessible_tabs_syncheights               == false        ? "false" : "true",
-                'data-save-state'               => $this->accessible_tabs_save_state                == false        ? "false" : "true",
-                'data-auto-anchor'              => $this->accessible_tabs_auto_anchor               == false        ? "false" : "true",
-                'data-pagination'               => $this->accessible_tabs_pagination                == false        ? "false" : "true",
-                'data-fx'                       => $this->accessible_tabs_fx,
-                'data-fxspeed'                  => $this->accessible_tabs_fxspeed,
-                'data-wrapper-class'            => $this->accessible_tabs_wrapper_class,
-                'data-current-class'            => $this->accessible_tabs_current_class,
-                'data-current-info-position'    => $this->accessible_tabs_current_info_position,
-                'data-current-info-text'        => $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_current_info_text'],
-                'data-tabhead-class'            => $this->accessible_tabs_tabhead_class,
-                'data-tabbody'                  => '.'.$this->accessible_tabs_tabbody,
-                'data-tabs-list-class'          => $this->accessible_tabs_tabs_list_class,
-                'data-first-nav-item-class'     => $this->accessible_tabs_first_nav_item_class,
-                'data-last-nav-item-class'      => $this->accessible_tabs_last_nav_item_class,
-                'data-clearfix-class'           => $this->accessible_tabs_clearfix_class,
-                'data-css-class-available'      => $this->accessible_tabs_css_class_available       ==  false       ? "false" : "true",
-                'data-wrap-inner-nav-links'     => $this->accessible_tabs_wrap_inner_nav_links,
-                'data-sync-height-method-name'  => $this->accessible_tabs_sync_height_method_name,
-            );
-            foreach($data as $k=>$v) {
-                //if($v !== false && $v != '') {
-                    $filtered_datas[] = $k.'="'.$v.'"';
-                //}
-            }
-            $this->Template->data = implode(" ",$filtered_datas);
+            $data = array
+		            (
+		            
+						'wrapperClass'			=> $this->accessible_tabs_wrapper_class,
+				  		'currentClass'			=> $this->accessible_tabs_current_class,
+				  		'tabhead'				=> $this->accessible_tabs_wrapper_class ? ".".$this->accessible_tabs_wrapper_class.">".$this->accessible_tabs_tabhead : $this->defaults['wrapperClass'].">".$this->accessible_tabs_tabhead,
+				  		'tabheadClass'			=> $this->accessible_tabs_tabhead_class,
+				  		'tabbody'				=> '.'.$this->accessible_tabs_tabbody,
+				  		'fx'					=> $this->accessible_tabs_fx,
+				  		'fxspeed'				=> $this->accessible_tabs_fxspeed,
+				  		'currentInfoText'		=> $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_current_info_text'],
+				  		'currentInfoPosition'	=> $this->accessible_tabs_current_info_position,
+				  		'currentInfoClass'		=> $this->accessible_tabs_current_info_class,
+				  		'tabsListClass'			=> $this->accessible_tabs_tabs_list_class,
+				  		'syncheights'			=> $this->accessible_tabs_syncheights,
+				  		'syncHeightMethodeName'	=> $this->accessible_tabs_sync_height_method_name,
+				  		'cssClassAvailable'		=> $this->accessible_tabs_css_class_available,
+				  		'saveState'				=> $this->accessible_tabs_save_state,
+				  		'autoAnchor'			=> $this->accessible_tabs_auto_anchor,
+				  		'pagination'			=> $this->accessible_tabs_pagination,
+				  		'position'				=> $this->accessible_tabs_position,
+				  		'wrapperInnerNavLinks'	=> $this->accessible_tabs_wrap_inner_nav_links,
+				  		'firstNavItemClass'		=> $this->accessible_tabs_first_nav_item_class,
+				  		'lastNavItemClass'		=> $this->accessible_tabs_last_nav_item_class,
+				  		'clearfixClass'			=> $this->accessible_tabs_clearfix_class,
+				  		'responsive'			=> $this->accessible_tabs_responsive,
+				  		'responsiveToggleClass'	=> $this->accessible_tabs_responsive_toggle_class,
+		            );
+			
+			foreach($data as $k => $v) 
+			{
+				
+				if($this->defaults[$k] == $v || $v == '') 
+				{
+					unset($data[$k]);
+				}
+				else
+				{
+					if(is_bool($this->defaults[$k])) 
+					{
+						$v == false ? $v = "false" : $v = "true";
+					}
+					
+					$data[$k] = "data-".$k."='".htmlspecialchars($v)."'";	
+				}
+			}
+			
+            $this->Template->data = implode(" ",$data);
 
             \ContentAccessibleTabsSeparator::$strTabhead     = $this->accessible_tabs_tabhead;
             \ContentAccessibleTabsSeparator::$strTabbody     = $this->accessible_tabs_tabbody;
