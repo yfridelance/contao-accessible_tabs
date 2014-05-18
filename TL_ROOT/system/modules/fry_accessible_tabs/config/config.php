@@ -89,6 +89,13 @@ $GLOBALS['TL_CTE']['accessible_tabs']['accessible_tabs_start']      = 'ContentAc
 $GLOBALS['TL_CTE']['accessible_tabs']['accessible_tabs_separator']  = 'ContentAccessibleTabsSeparator';
 $GLOBALS['TL_CTE']['accessible_tabs']['accessible_tabs_stop']       = 'ContentAccessibleTabsStop';
 
+/**
+ * Wrapper elements
+ */
+$GLOBALS['TL_WRAPPERS']['start'][] = 'accessible_tabs_start';
+$GLOBALS['TL_WRAPPERS']['stop'][] = 'accessible_tabs_stop';
+
+
 $GLOBALS['TL_CONFIG']['accessible_tabs_tabhead']                = 'h4';
 $GLOBALS['TL_CONFIG']['accessible_tabs_position']               = 'top';
 $GLOBALS['TL_CONFIG']['accessible_tabs_syncheights']            = true;
