@@ -1,5 +1,5 @@
 <?php if(!$this->firstItem) : ?>
     </div>
 <?php endif; ?>
-<<?= $this->tabhead; ?><?php if($this->id): ?> id="<?= $this->id; ?>"<?php endif; ?> <?= $this->data; ?>><?= $this->tabtitle; ?></<?= $this->tabhead; ?>>
+<<?= $this->tabhead; ?><?php if($this->id): ?> id="<?= $this->id; ?>"<?php endif; ?>><?= $this->tabtitle; ?></<?= $this->tabhead; ?>>
 <div class="<?= $this->tabbody; ?>">

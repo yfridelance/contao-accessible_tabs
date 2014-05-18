@@ -43,7 +43,6 @@ class ContentAccessibleTabsSeparator extends \ContentElement {
             $this->Template->tabbody    = self::$strTabbody;
             $this->Template->tabtitle   = $this->accessible_tabs_title;
             $this->Template->id         = $this->accessible_tabs_anchor;
-            $this->Template->data       = 'data-target="'.$this->accessible_tabs_anchor.'"';
 
             if(self::$boolFirstItem)
                 self::$boolFirstItem = false;
