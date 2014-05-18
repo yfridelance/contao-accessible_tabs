@@ -25,6 +25,21 @@
             if (r===undefined) {r='';} else {r='-'+r;}
             return p + q + r;
         },
+        
+        getDataAttributes: function(defaults,node) {
+        	
+        	var datas = {};
+        	
+        	$.each(defaults, function(key, value) {
+        		
+	            if($(node).data(key.toString().toLocaleLowerCase()) !== undefined){
+	                datas[key] = $(node).data(key.toString().toLocaleLowerCase());
+	            }
+        	});
+        	
+        	return datas;       	
+        },
+ 
         accessibleTabs: function(config) {
             var defaults = {
                 wrapperClass: 'content', // Classname to apply to the div that is wrapped around the original Markup
@@ -48,8 +63,11 @@
                 wrapInnerNavLinks: '', // inner wrap for a-tags in tab navigation. See http://api.jquery.com/wrapInner/ for further informations
                 firstNavItemClass: 'first', // Classname of the first list item in the tab navigation
                 lastNavItemClass: 'last', // Classname of the last list item in the tab navigation
-                clearfixClass: 'clearfix' // Name of the Class that is used to clear/contain floats
+                clearfixClass: 'clearfix', // Name of the Class that is used to clear/contain floats
+                responsive: true, // Enable Responsive Menu
+                responsiveToggleClass: 'open' // Classname from the responsive toggler
             };
+            
             var keyCodes = {
                 37 : -1, //LEFT
                 38 : -1, //UP
@@ -60,8 +78,11 @@
                 top : 'prepend',
                 bottom : 'append'
             };
-            this.options = $.extend(defaults, config);
+            
+            this.options = $.extend(defaults, this.getDataAttributes(defaults,this), config);
 
+			debug(this.options);
+			
             var tabsCount = 0;
             if($("body").data('accessibleTabsCount') !== undefined){
                 tabsCount = $("body").data('accessibleTabsCount');
@@ -140,6 +161,16 @@
                         if(o.options.saveState && $.cookie){
                             $.cookie('accessibletab_'+el.attr('id')+'_active',i);
                         }
+                        
+                        // update
+                        if(o.options.responsive) {
+                            if($(this).parent("li").hasClass(o.options.currentClass)) {
+                                $(el).find("ul."+o.options.tabsListClass).addClass(o.options.responsiveToggleClass);
+                            } else {
+                                $(el).find("ul."+o.options.tabsListClass).removeClass(o.options.responsiveToggleClass);
+                            };
+                        }
+                        
                         $(el).find('ul.'+o.options.tabsListClass+'>li.'+o.options.currentClass).removeClass(o.options.currentClass)
                         .find("span."+o.options.currentInfoClass).remove();
                         $(this).blur();
