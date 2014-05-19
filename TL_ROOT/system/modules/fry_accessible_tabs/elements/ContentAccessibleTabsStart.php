@@ -122,7 +122,7 @@ class ContentAccessibleTabsStart extends \ContentElement {
             $this->strTemplate = 'be_wildcard';
             $this->Template = new \BackendTemplate($this->strTemplate);
             $this->Template->title = $this->headline;
-            $this->Template->wildcard   = strtoupper('### Accessible Tabs: Wrapper Start ###');
+            //$this->Template->wildcard   = strtoupper('### Accessible Tabs: Wrapper Start ###');
         }
 
 

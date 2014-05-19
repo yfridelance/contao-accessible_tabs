@@ -51,7 +51,7 @@ class ContentAccessibleTabsSeparator extends \ContentElement {
 
             $this->strTemplate = 'be_wildcard';
             $this->Template = new \BackendTemplate($this->strTemplate);
-            $this->Template->wildcard   = strtoupper('### Accessible Tabs - Tab Name:'.$this->accessible_tabs_title.' ###');
+            $this->Template->wildcard   = "> ".$this->accessible_tabs_title;
 
         }
 

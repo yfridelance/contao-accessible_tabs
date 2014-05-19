@@ -40,7 +40,7 @@ class ContentAccessibleTabsStop extends \ContentElement {
 
             $this->strTemplate = 'be_wildcard';
             $this->Template = new \BackendTemplate($this->strTemplate);
-            $this->Template->wildcard   = strtoupper('### Accessible Tabs: Wrapper Stop ###');
+            //$this->Template->wildcard   = strtoupper('### Accessible Tabs: Wrapper Stop ###');
         }
 
 
