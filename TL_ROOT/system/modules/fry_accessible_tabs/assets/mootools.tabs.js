@@ -37,7 +37,7 @@ var AccessibleTabs = new Class({
 		var c = this.elements = $$(a);
 		var o = this.options;
 		
-		var data = {}
+		var data = {};
 		var d = new Object();
 		var prefix = "fryat-";
 		$H(o).each(function(value, key){
