@@ -1,5 +1,7 @@
-<script src='system/modules/fry_accessible_tabs/assets/mootools.tabs.js'></script>
-<script src='system/modules/fry_accessible_tabs/assets/mootools.syncheight.js'></script>
+<?php
+$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/fry_accessible_tabs/assets/mootools.tabs.js|static';
+$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/fry_accessible_tabs/assets/mootools.syncheight.js|static';
+?>
 <script>
     (function($) {
         window.addEvent('domready', function() {

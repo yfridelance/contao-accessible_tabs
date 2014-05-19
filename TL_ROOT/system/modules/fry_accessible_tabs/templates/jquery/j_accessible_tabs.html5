@@ -1,6 +1,6 @@
-<?php $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/fry_accessible_tabs/assets/jquery.tabs.js'; ?>
-<?php $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/fry_accessible_tabs/assets/jquery.cookie.js'; ?>
-<?php $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/fry_accessible_tabs/assets/jquery.syncheight.js'; ?>
+<?php $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/fry_accessible_tabs/assets/jquery.tabs.js|static'; ?>
+<?php $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/fry_accessible_tabs/assets/jquery.cookie.js|static'; ?>
+<?php $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/fry_accessible_tabs/assets/jquery.syncheight.js|static'; ?>
 <script>
     (function($) {
         $(document).ready(function(){
