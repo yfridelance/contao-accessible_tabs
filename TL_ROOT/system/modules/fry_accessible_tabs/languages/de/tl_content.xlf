@@ -74,6 +74,12 @@
             <trans-unit id="CTE.accessible_tabs_current_class.1">
                 <source>Diese Klasse wird dem aktiven Navigationselement angefügt.</source>
             </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_current_info_position.0">
+                <source>Informations position</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_current_info_position.1">
+                <source>Legt fest ob die Information vor oder nach dem Tab ausgegeben wird.</source>
+            </trans-unit>
             <trans-unit id="CTE.accessible_tabs_tabhead_class.0">
                 <source>Klasse: Tab Name</source>
             </trans-unit>
