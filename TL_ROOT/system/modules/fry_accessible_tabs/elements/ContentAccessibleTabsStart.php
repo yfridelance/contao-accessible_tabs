@@ -107,8 +107,7 @@ class ContentAccessibleTabsStart extends \ContentElement {
 					{
 						$v == false ? $v = "false" : $v = "true";
 					}
-					
-					$data[$k] = "data-".$k."='".htmlspecialchars($v)."'";	
+					$data[$k] = "data-fryat-".trim(preg_replace('/([A-Z][a-z])/', '-\1', $k))."='".htmlspecialchars($v)."'";	
 				}
 			}
 			

@@ -32,8 +32,10 @@
         	
         	$.each(defaults, function(key, value) {
         		
-	            if($(node).data(key.toString().toLocaleLowerCase()) !== undefined){
-	                datas[key] = $(node).data(key.toString().toLocaleLowerCase());
+
+        		var k = "fryat-" + key.toString().replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+	            if($(node).data(k) !== undefined){
+	                datas[key] = $(node).data(k);
 	            }
         	});
         	
