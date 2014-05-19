@@ -94,6 +94,7 @@ $GLOBALS['TL_CTE']['accessible_tabs']['accessible_tabs_stop']       = 'ContentAc
  */
 $GLOBALS['TL_WRAPPERS']['start'][] = 'accessible_tabs_start';
 $GLOBALS['TL_WRAPPERS']['stop'][] = 'accessible_tabs_stop';
+$GLOBALS['TL_WRAPPERS']['separator'][] = 'accessible_tabs_separator';
 
 
 $GLOBALS['TL_CONFIG']['accessible_tabs_tabhead']                = 'h4';
