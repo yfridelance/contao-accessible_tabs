@@ -27,6 +27,8 @@ var AccessibleTabs = new Class({
 		syncHeightsClassName : "SyncHeight",
 		debug : true,
 		clearfixClass : "block",
+		responsive: true,
+		responsiveToggleClass: "open"
 	},
 	getUniqueId : function(a) {
 		return a + new Date().getTime();
@@ -104,6 +106,24 @@ var AccessibleTabs = new Class({
 		m.getElements("ul." + l.options.tabsListClass + ">li>a").each(function(o, n) {
 			o.addEvent("click", function(r) {
 				var s = 0;
+// responsive section
+// update
+//if(o.options.responsive) {
+//    if($(this).parent("li").hasClass(o.options.currentClass)) {
+//        $(el).find("ul."+o.options.tabsListClass).addClass(o.options.responsiveToggleClass);
+//    } else {
+//        $(el).find("ul."+o.options.tabsListClass).removeClass(o.options.responsiveToggleClass);
+//    };
+//}
+				if(l.options.responsive == true) {
+					
+					if(this.getParent('li').hasClass(l.options.currentClass)) {
+						m.getElement("ul." + l.options.tabsListClass).addClass(l.options.responsiveToggleClass);
+					} else {
+						m.getElement("ul." + l.options.tabsListClass).removeClass(l.options.responsiveToggleClass);
+					}
+					
+				}
 				s = m.getElement("ul." + l.options.tabsListClass + " li." + l.options.currentClass).removeClass(l.options.currentClass).getAllPrevious().length;
 				g.dispose();
 				o.blur();
