@@ -35,8 +35,22 @@ var AccessibleTabs = new Class({
 	},
 	initialize : function(a, b) {
 		var c = this.elements = $$(a);
-		this.setOptions(b);
-		switch(b.fx) {
+		var o = this.options;
+		
+		var data = {}
+		var d = new Object();
+		var prefix = "fryat-";
+		$H(o).each(function(value, key){
+
+		    var k = key.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+		    var v = c.get("data-" + prefix + k);
+		    if(v !== undefined && v != "") {
+		    	data[key] = v.toString();
+		    }
+		});
+	
+		this.setOptions(data,b);
+		switch(o.fx) {
 			case"fadeIn":
 				this.addEvent("showContent", function(d) {
 					d.preventDefault();
@@ -106,15 +120,7 @@ var AccessibleTabs = new Class({
 		m.getElements("ul." + l.options.tabsListClass + ">li>a").each(function(o, n) {
 			o.addEvent("click", function(r) {
 				var s = 0;
-// responsive section
-// update
-//if(o.options.responsive) {
-//    if($(this).parent("li").hasClass(o.options.currentClass)) {
-//        $(el).find("ul."+o.options.tabsListClass).addClass(o.options.responsiveToggleClass);
-//    } else {
-//        $(el).find("ul."+o.options.tabsListClass).removeClass(o.options.responsiveToggleClass);
-//    };
-//}
+
 				if(l.options.responsive == true) {
 					
 					if(this.getParent('li').hasClass(l.options.currentClass)) {

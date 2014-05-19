@@ -4,19 +4,7 @@
     (function($) {
         window.addEvent('domready', function() {
             $$('.ce_accessible_tabs').each(function(cte) {
-                var tabs = new AccessibleTabs(cte, {
-                    wrapperClass: cte.get('data-wrapper-class'),
-                    tabhead: cte.get('data-tabhead'),
-                    //tabbody: cte.get('data-tabbody'),
-                    currentClass: cte.get('data-current-class'),
-                    currentInfoText: cte.get('data-current-info-text'),
-                    currentInfoPosition: cte.get('data-current-info-position'),
-                    currentInfoClass: cte.get('data-current-info-class'),
-                    fx: cte.get('data-fx'),
-                    fxspeed: cte.get('data-fxspeed'),
-                    tabsListClass: cte.get('data-tabs-list-class')
-                    //syncheights: cte.get('data-sync-heights')
-                })
+                var tabs = new AccessibleTabs(cte, {})
             })
         });
     })(document.id)
