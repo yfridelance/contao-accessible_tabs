@@ -31,9 +31,8 @@
         	var datas = {};
         	
         	$.each(defaults, function(key, value) {
-        		
-
-        		var k = "fryat-" + key.toString().replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+    			var prefix = "fryat-";
+        		var k = prefix + key.toString().replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
 	            if($(node).data(k) !== undefined){
 	                datas[key] = $(node).data(k);
 	            }
