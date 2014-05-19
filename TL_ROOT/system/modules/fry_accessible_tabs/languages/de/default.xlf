@@ -8,9 +8,6 @@
       		<trans-unit id="CTE.accessible_tabs_start.0">
         		<source>Umschlag beginn</source>
       		</trans-unit>
-      		<trans-unit id="CTE.accessible_tabs_start.0">
-        		<source>Umschlag Anfand</source>
-      		</trans-unit>
       		<trans-unit id="CTE.accessible_tabs_start.1">
         		<source>Erzeugt den öffnenden Teil des Accessible Tabs-Umschlags.</source>
       		</trans-unit>
