@@ -47,12 +47,12 @@ var AccessibleTabs = new Class({
 			case"slideDown":
 				if ($defined(Fx.Slide)) {
 				}
-				break
+				break;
 		}
 		c.each(function(d) {
 			this.makeElement(d);
 		}, this);
-		return this
+		return this;
 	},
 	makeElement : function(m) {
 		m = document.id(m);
@@ -76,7 +76,7 @@ var AccessibleTabs = new Class({
 				i = e[n].getFirst().get("text");
 			}
 			o.dispose();
-			a++
+			a++;
 		});
 		var f = new Element("ul", {
 			"class" : l.options.clearfixClass + " " + l.options.tabsListClass + " tabamount" + a
@@ -84,7 +84,7 @@ var AccessibleTabs = new Class({
 		f.inject(m, "top");
 		m.getElements(l.options.tabbody).each(function(o, n) {
 			if (n != 0) {
-				o.hide()
+				o.hide();
 			}
 		});
 		j.grab(new Element(c, {
@@ -129,7 +129,7 @@ var AccessibleTabs = new Class({
 					if (l.keyCodes[u.code]) {
 						l.showAccessibleTab(n + l.keyCodes[u.code], m);
 						d.removeEvents("keyup");
-						l.debug(n)
+						l.debug(n);
 					}
 				};
 				d.set({
@@ -138,7 +138,7 @@ var AccessibleTabs = new Class({
 				d.focus();
 				d.addEvent("keyup", t);
 				o.grab(g, (l.options.currentInfoPosition == "prepend") ? "top" : "bottom").getParent().addClass(l.options.currentClass);
-				return false
+				return false;
 			});
 			var p = function(q) {
 				$(document).addEvent("keyup", function(r) {
