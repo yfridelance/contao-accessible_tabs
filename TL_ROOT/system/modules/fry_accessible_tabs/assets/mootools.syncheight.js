@@ -8,33 +8,33 @@ var SyncHeight = new Class({
 	initialize : function(c, a) {
 		this.setOptions(a);
 		this.elements = $$(c);
-		if (Browser.Engine.trident4) {
-			this.browser_id = 1
-		}
+		//if (Browser.Engine.trident4) {
+		//	this.browser_id = 1;
+		//}
 		this.syncNow();
 		if (this.options.updateOnResize == true) {
 			var b = function() {
-				this.syncNow()
+				this.syncNow();
 			};
 			b = b.bind(this);
-			$(window).addEvent("resize", b)
+			$(window).addEvent("resize", b);
 		}
-		return this
+		return this;
 	},
 	syncNow : function() {
 		var a = 0;
 		this.elements.each(function(b) {
 			b.setStyle(this.property[this.browser_id][0], this.property[this.browser_id][1]);
 			var c = b.measure(function() {
-				return this.getSize().y
+				return this.getSize().y;
 			});
 			if (c > a) {
-				a = c
+				a = c;
 			}
 		}, this);
 		this.elements.each(function(b) {
-			b.setStyle(this.property[this.browser_id][0], a + "px")
+			b.setStyle(this.property[this.browser_id][0], a + "px");
 		}, this);
-		return this
+		return this;
 	}
 }); 
