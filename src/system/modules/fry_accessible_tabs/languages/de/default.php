@@ -21,4 +21,4 @@ $GLOBALS['TL_LANG']['CTE']['accessible_tabs_start'][1]		= 'Erzeugt den öffnende
 $GLOBALS['TL_LANG']['CTE']['accessible_tabs_separator'][0] 	= 'Neues Tab';
 $GLOBALS['TL_LANG']['CTE']['accessible_tabs_separator'][1] 	= 'Erzeugt ein neues Reiterelement.';
 $GLOBALS['TL_LANG']['CTE']['accessible_tabs_stop'][0]      	= 'Umschlag Ende';
-$GLOBALS['TL_LANG']['CTE']['accessible_tabs_stop'][0]      	= 'Erzeugt den schliessenden Teil des Accessible Tabs-Umschlags.';
+$GLOBALS['TL_LANG']['CTE']['accessible_tabs_stop'][1]      	= 'Erzeugt den schliessenden Teil des Accessible Tabs-Umschlags.';
