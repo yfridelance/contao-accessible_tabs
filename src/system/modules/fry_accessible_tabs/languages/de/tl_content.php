@@ -26,7 +26,7 @@ $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_save_state'][1]      
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_auto_anchor'][0]               	= 'Von extern verlinkbar';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_auto_anchor'][1]               	= 'Das Tab kann über den Hashtag direckt angesprungen werden (nur jQuery).';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_pagination'][0]                	= 'Seitenumbruch';
-$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_pagination'][1]                	= 'Aktiviert vor- und Zurückschaltflächen (nur jQuery).';
+$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_pagination'][1]                	= 'Aktiviert die Vor- und Zurückschaltflächen (nur jQuery).';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_css_class_available'][0]       	= 'Individuelle Klassen zuweisen';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_css_class_available'][1]       	= 'Weist jedem Navigationspunkt frei definierbare Klassen zu (nur jQuery).';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_responsive'][0]       			= 'Responsives verhalten';
@@ -39,6 +39,8 @@ $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_wrapper_class'][0]   
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_wrapper_class'][1]             	= 'Klassenname des, um den ursprünglichen Inhalt, umschlagenden DIV\'s.';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_current_class'][0]             	= 'Klasse: aktuelles Tab';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_current_class'][1]             	= 'Diese Klasse wird dem aktiven Navigationselement angefügt.';
+$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_current_info_position'][0]       = 'Position der Info';
+$GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_current_info_position'][1]       = 'Legt fest ob die Information vor oder nach dem Tab ausgegeben wird.';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_tabhead_class'][0]             	= 'Klasse: Tab Name';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_tabhead_class'][1]             	= 'Diese Klasse wird den zuvor definierten Heading Tags angefügt.';
 $GLOBALS['TL_LANG']['tl_accessible_tabs']['accessible_tabs_tabbody'][0]                   	= 'Klasse: Tab Body';
