@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+    <file datatype="php" original="system/modules/core/languages/de/tl_content.php" source-language="de">
+        <body>
+            <trans-unit id="CTE.accessible_tabs_tabhead.0">
+                <source>Überschrift Element</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_tabhead.1">
+                <source>Dieses Element wird in die Navigation Transformierd.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_position.0">
+                <source>Positionierung der Navigation</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_position.1">
+                <source>Definiert wo die Navigation eingefügt wird.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_syncheights.0">
+                <source>Höhe anpassen</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_syncheights.1">
+                <source>Passt höhe der einzelnen Inhaltselementen dem grössten an.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_save_state.0">
+                <source>Zustand sichern</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_save_state.1">
+                <source>Das aktive Tab wird in ein Cookie geschrieben (nur jQuery).</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_auto_anchor.0">
+                <source>Von extern verlinkbar</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_auto_anchor.1">
+                <source>Das Tab kann über den Hashtag direckt angesprungen werden (nur jQuery).</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_pagination.0">
+                <source>Seitenumbruch</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_pagination.1">
+                <source>Aktiviert vor- und Zurückschaltflächen (nur jQuery).</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_css_class_available.0">
+                <source>Klassen zuweisen</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_css_class_available.1">
+                <source>Weist jedem Navigationspunkt frei definierbare Klassen zu (nur jQuery).</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_css_class_available.0">
+                <source>Responsives verhalten</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_css_class_available.1">
+                <source>Ermöglicht bei kleinen Screens die Tabs in ein Menu umzuwandeln.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_fx.0">
+                <source>Übergangsefekt</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_fx.1">
+                <source>Definiert den Animationstyp beim wechsel zwischen den Tabs (nur jQuery).</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_fx.0">
+                <source>Übergangsefekt Dauer</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_fx.1">
+                <source>Die Dauer des Übergangefektes - mögliche werte [normal|fast|slow] oder millisekunden (nur jQuery).</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_wrapper_class.0">
+                <source>Klasse: umschlagendes DIV</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_wrapper_class.1">
+                <source>Klassenname des, um den ursprünglichen Inhalt, umschlagenden DIV's.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_current_class.0">
+                <source>Klasse: aktuelles Tab</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_current_class.1">
+                <source>Diese Klasse wird dem aktiven Navigationselement angefügt.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_current_info_position.0">
+                <source>Informations position</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_current_info_position.1">
+                <source>Legt fest ob die Information vor oder nach dem Tab ausgegeben wird.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_tabhead_class.0">
+                <source>Klasse: Tab Name</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_tabhead_class.1">
+                <source>Diese Klasse wird den zuvor definierten Heading Tags angefügt.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_tabbody.0">
+                <source>Klasse: Tab Body</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_tabbody.1">
+                <source>Diese Klasse wird dem Body der einzelnen Tabs angefügt.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_tabs_list_class.0">
+                <source>Klasse: Tab Liste</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_tabs_list_class.1">
+                <source>Diese Klasse wird dem Tab umgebendem UL Element zugewiesen.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_responsive_toggler_class.0">
+                <source>Klasse: Mobile Toggler</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_responsive_toggler_class.1">
+                <source>Diese Klasse wird dem UL Element zugewiesen wenn das Menu offen ist.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_first_nav_item_class.0">
+                <source>Klasse: Erstes Tab</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_first_nav_item_class.1">
+                <source>Diese Klasse wird dem ersten LI Element zugewiesen.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_last_nav_item_class.0">
+                <source>Klasse: Letztes Tab</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_last_nav_item_class.1">
+                <source>Diese Klasse wird dem letzten LI Element zugewiesen.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_clearfix_class.0">
+                <source>Klasse: Clearfix</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_clearfix_class.1">
+                <source>Diese Klasse ermöglicht eine eigene Clearfix-Klasse zu verwenden.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_wrap_inner_nav_links.0">
+                <source>jQuery: wrapinner</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_wrap_inner_nav_links.1">
+                <source>Siehe jQuery dokumentation http://api.jquery.com/wrapInner.</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_sync_height_method_name.0">
+                <source>SyncHeights Methode</source>
+            </trans-unit>
+            <trans-unit id="CTE.accessible_tabs_sync_height_method_name.1">
+                <source>Definiert die SyncHeights JS Klasse.</source>
+            </trans-unit>
+        </body>
+    </file>
+ </xliff>

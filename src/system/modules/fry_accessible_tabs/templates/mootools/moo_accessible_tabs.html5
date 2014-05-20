@@ -1,0 +1,13 @@
+<?php
+$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/fry_accessible_tabs/assets/mootools.tabs.js|static';
+$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/fry_accessible_tabs/assets/mootools.syncheight.js|static';
+?>
+<script>
+    (function($) {
+        window.addEvent('domready', function() {
+            $$('.ce_accessible_tabs').each(function(cte) {
+                var tabs = new AccessibleTabs(cte, {})
+            })
+        });
+    })(document.id)
+</script>

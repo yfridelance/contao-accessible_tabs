@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+	<file datatype="php" original="system/modules/core/languages/de/default.php" source-language="de">
+    	<body>
+    		<trans-unit id="CTE.accessible_tabs">
+        		<source>Accessible Tabs</source>
+      		</trans-unit>
+      		<trans-unit id="CTE.accessible_tabs_start.0">
+        		<source>Umschlag beginn</source>
+      		</trans-unit>
+      		<trans-unit id="CTE.accessible_tabs_start.1">
+        		<source>Erzeugt den öffnenden Teil des Accessible Tabs-Umschlags.</source>
+      		</trans-unit>
+      		<trans-unit id="CTE.accessible_tabs_stop.0">
+        		<source>Umschlag Ende</source>
+      		</trans-unit>
+      		<trans-unit id="CTE.accessible_tabs_stop.1">
+        		<source>Erzeugt den schliessenden Teil des Accessible Tabs-Umschlags.</source>
+      		</trans-unit>
+      		<trans-unit id="CTE.accessible_tabs_seperator.0">
+        		<source>Neuer Reiter</source>
+      		</trans-unit>
+      		<trans-unit id="CTE.accessible_tabs_seperator.1">
+        		<source>Erzeugt ein neues Reiterelement.</source>
+      		</trans-unit>
+        </body>
+   	</file>
+ </xliff>

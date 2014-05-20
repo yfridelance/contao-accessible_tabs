@@ -1,0 +1,45 @@
+{
+	"name":"yfridelance/accessible_tabs",
+	"description":"Accessible Tabs",
+	"keywords":["contao", "tabs", "jquery", "mootools"],
+	"type":"contao-module",
+	"homepage":"http://fridelance.ch/",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name":"Yces Fridelance",
+			"email":"yves@fridelance.ch",
+			"homepage":"http://www.fridelance.ch",
+			"role":"Developer"
+		}
+	],
+	"support":{
+		"email":"support@fridelance.ch",
+		"issues":"https://github.com/yfridelance/contao-accessible_tabs/issues",
+		"source":"https://github.com/yfridelance/contao-accessible_tabs"
+	},
+	"require":{
+		"php":">=5.3",
+		"contao/core":"~3.1",
+		"contao-community-alliance/composer-installer": "*",
+	},
+	"require-dev": {
+		"cyberspectrum/contao-toolbox": "dev-master"
+	},
+	"extra":{
+		"contao": {
+			"symlinks":{
+				"src/system/modules/fry_accessible_tabs":"system/modules/fry_accessible_tabs"
+			},
+			"transifex": {
+				"project": "contao-accessible_tabs",
+				"prefix": "master-",
+				"languages_cto": "src/system/modules/fry_accessible_tabs/languages",
+				"languages_tx": ".tx"
+			}
+		},
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	}
+}
