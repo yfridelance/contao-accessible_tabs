@@ -1,7 +1,7 @@
 {
 	"name":"yfridelance/accessible_tabs",
 	"description":"Accessible Tabs",
-	"keywords":["contao", "tabs", "jquery", "mootools"],
+	"keywords":["contao", "tabs", "accessible", "jquery", "mootools"],
 	"type":"contao-module",
 	"homepage":"http://fridelance.ch/",
 	"license":"LGPL-3.0+",
@@ -19,7 +19,7 @@
 	},
 	"require":{
 		"php":">=5.3",
-		"contao/core":"~3.1",
+		"contao/core":"3.0.*",
 		"contao-community-alliance/composer-installer": "*"
 	},
 	"extra":{
