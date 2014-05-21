@@ -19,8 +19,16 @@
 	},
 	"require":{
 		"php":">=5.3",
+<<<<<<< HEAD
 		"contao/core":"3.0.*",
 		"contao-community-alliance/composer-installer": "*"
+=======
+		"contao/core":"~3.1",
+		"contao-community-alliance/composer-installer": "*"
+	},
+	"require-dev": {
+		"cyberspectrum/contao-toolbox": "dev-master"
+>>>>>>> FETCH_HEAD
 	},
 	"extra":{
 		"contao": {
