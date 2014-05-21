@@ -11,6 +11,10 @@
  * @copyright Y. Fridelance 2014
  */
 
+ /**
+  * Config
+  */
+ $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][]			= array('fry_at_tl_content', 'showJsLibraryHint');
 
 /**
  * Palettes
@@ -280,14 +284,14 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_title'] = array
 $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_anchor'] = array
 (
     'label'			    => &$GLOBALS['TL_LANG']['tl_content']['accessible_tabs_anchor'],
-    'load_callback'     => array(array('DCA_TL_Accessible_Tabs','getUniqueTabID')),
+    'load_callback'     => array(array('fry_at_tl_content','getUniqueTabID')),
     'exclude'           => true,
     'inputType'         => 'text',
     'eval'              => array('tl_class'=>'w50', 'disabled'=>false), 'mandatory'=>true,
     'sql'               => "varchar(255) NULL",
 );
 
-class DCA_TL_Accessible_Tabs {
+class fry_at_tl_content {
 
     public static function getUniqueTabID($uid)
     {
@@ -297,4 +301,24 @@ class DCA_TL_Accessible_Tabs {
         }
         return $uid;
     }
+	
+	/**
+	 * Show a hint if a JavaScript library needs to be included in the page layout
+	 * @param object
+	 */
+	public function showJsLibraryHint($dc)
+	{
+		if ($_POST || Input::get('act') != 'edit')
+		{
+			return;
+		}
+
+		// Return if the user cannot access the layout module (see #6190)
+		if (!$this->User->hasAccess('themes', 'modules') || !$this->User->hasAccess('layout', 'themes'))
+		{
+			return;
+		}
+		Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['includeTemplates'], 'moo_accessible_tabs', 'j_accessible_tabs'));
+	}
 }
+
