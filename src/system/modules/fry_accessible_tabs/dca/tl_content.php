@@ -14,7 +14,7 @@
  /**
   * Config
   */
- $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][]			= array('fry_at_tl_content', 'showJsLibraryHint');
+$GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][]			= array('fry_at_tl_content', 'showJsLibraryHint');
 
 /**
  * Palettes

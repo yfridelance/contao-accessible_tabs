@@ -22,4 +22,3 @@ $GLOBALS['TL_LANG']['CTE']['accessible_tabs_separator'][0] 	= 'New Tab';
 $GLOBALS['TL_LANG']['CTE']['accessible_tabs_separator'][1] 	= 'Generate a new Tab.';
 $GLOBALS['TL_LANG']['CTE']['accessible_tabs_stop'][0]      	= 'Wrapper stop';
 $GLOBALS['TL_LANG']['CTE']['accessible_tabs_stop'][1]      	= 'Generates the closing part of the Accessible Tabs wrapper.';
-
