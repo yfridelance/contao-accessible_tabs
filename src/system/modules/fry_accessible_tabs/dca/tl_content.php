@@ -314,10 +314,6 @@ class fry_at_tl_content {
 		}
 
 		// Return if the user cannot access the layout module (see #6190)
-		if (!$this->User->hasAccess('themes', 'modules') || !$this->User->hasAccess('layout', 'themes'))
-		{
-			return;
-		}
 		Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['includeTemplates'], 'moo_accessible_tabs', 'j_accessible_tabs'));
 	}
 }
