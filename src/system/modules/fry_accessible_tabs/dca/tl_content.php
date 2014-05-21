@@ -313,6 +313,7 @@ class fry_at_tl_content {
 			return;
 		}
 
+
 		// Return if the user cannot access the layout module (see #6190)
 		Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['includeTemplates'], 'moo_accessible_tabs', 'j_accessible_tabs'));
 	}
