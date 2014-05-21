@@ -8,6 +8,11 @@
                 var tabs = $(this).accessibleTabs({
                     
                 });
+                
+                $("a[href^='#']", this).click(function(e){ 
+		            e.preventDefault(); 
+		            tabs.showAccessibleTabSelector($(this).attr("href")); 
+		        });
             });
         });
     })(jQuery);
