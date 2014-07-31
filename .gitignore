@@ -4,8 +4,6 @@ Thumbs.db
 
 # IDEs 
 .buildpath
-.project
-.settings/
 .build/
 .external*/
 .idea/
