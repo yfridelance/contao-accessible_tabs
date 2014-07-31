@@ -70,7 +70,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_syncheights'] = arra
     'exclude'           => true,
     'inputType'         => 'checkbox',
     'eval'              => array('tl_class'=>'w50'),
-    'sql'               => "bit(1) NULL",
+    'sql'               => "char(1) NULL",
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_save_state'] = array
@@ -80,7 +80,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_save_state'] = array
     'exclude'           => true,
     'inputType'         => 'checkbox',
     'eval'              => array('tl_class'=>'w50', 'disabled'=>false),
-    'sql'               => "bit(1) NULL",
+    'sql'               => "char(1) NULL",
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_auto_anchor'] = array
@@ -90,7 +90,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_auto_anchor'] = arra
     'exclude'           => true,
     'inputType'         => 'checkbox',
     'eval'              => array('tl_class'=>'w50', 'disabled'=>false),
-    'sql'               => "bit(1) NULL",
+    'sql'               => "char(1) NULL",
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_responsive'] = array
@@ -100,7 +100,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_responsive'] = array
     'exclude'           => true,
     'inputType'         => 'checkbox',
     'eval'              => array('tl_class'=>'w50'),
-    'sql'               => "bit(1) NULL",
+    'sql'               => "char(1) NULL",
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_css_class_available'] = array
@@ -110,7 +110,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_css_class_available'
     'exclude'           => true,
     'inputType'         => 'checkbox',
     'eval'              => array('tl_class'=>'w50'),
-    'sql'               => "bit(1) NULL",
+    'sql'               => "char(1) NULL",
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_pagination'] = array
