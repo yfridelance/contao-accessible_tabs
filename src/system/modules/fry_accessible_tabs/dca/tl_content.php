@@ -70,7 +70,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_syncheights'] = arra
     'exclude'           => true,
     'inputType'         => 'checkbox',
     'eval'              => array('tl_class'=>'w50'),
-    'sql'               => "bit(1) NULL",
+    'sql'               => "char(1) NULL",
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_save_state'] = array
@@ -80,7 +80,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_save_state'] = array
     'exclude'           => true,
     'inputType'         => 'checkbox',
     'eval'              => array('tl_class'=>'w50', 'disabled'=>false),
-    'sql'               => "bit(1) NULL",
+    'sql'               => "char(1) NULL",
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_auto_anchor'] = array
@@ -90,7 +90,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_auto_anchor'] = arra
     'exclude'           => true,
     'inputType'         => 'checkbox',
     'eval'              => array('tl_class'=>'w50', 'disabled'=>false),
-    'sql'               => "bit(1) NULL",
+    'sql'               => "char(1) NULL",
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_responsive'] = array
@@ -100,7 +100,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_responsive'] = array
     'exclude'           => true,
     'inputType'         => 'checkbox',
     'eval'              => array('tl_class'=>'w50'),
-    'sql'               => "bit(1) NULL",
+    'sql'               => "char(1) NULL",
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_css_class_available'] = array
@@ -110,7 +110,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_css_class_available'
     'exclude'           => true,
     'inputType'         => 'checkbox',
     'eval'              => array('tl_class'=>'w50'),
-    'sql'               => "bit(1) NULL",
+    'sql'               => "char(1) NULL",
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_pagination'] = array
@@ -291,7 +291,16 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['accessible_tabs_anchor'] = array
     'sql'               => "varchar(255) NULL",
 );
 
-class fry_at_tl_content {
+class fry_at_tl_content extends Backend {
+
+    /**
+     * Import the back end user object
+     */
+    public function __construct()
+    {
+        parent::__construct();
+        $this->import('BackendUser', 'User');
+    }
 
     public static function getUniqueTabID($uid)
     {
@@ -313,9 +322,23 @@ class fry_at_tl_content {
 			return;
 		}
 
+        // Return if the user cannot access the layout module (see #6190)
+        if (!$this->User->hasAccess('themes', 'modules') || !$this->User->hasAccess('layout', 'themes'))
+        {
+            return;
+        }
 
-		// Return if the user cannot access the layout module (see #6190)
-		Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['includeTemplates'], 'moo_accessible_tabs', 'j_accessible_tabs'));
+        $objCte = ContentModel::findByPk($dc->id);
+
+        if ($objCte === null)
+        {
+            return;
+        }
+
+        if ($objCte->type == "accessible_tabs_start") {
+            Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['includeTemplates'], 'moo_accessible_tabs', 'j_accessible_tabs'));
+        }
+		
 	}
 }
 
